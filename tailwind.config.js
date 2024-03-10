@@ -4,24 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--background) /<alpha-value>)",
-        foreground: "hsl(var(--foreground) /<alpha-value>)",
-      },
-      textColor: {
-        background: "hsl(var(--background) /<alpha-value>)",
-        foreground: "hsl(var(--foreground) /<alpha-value>)",
-      },
-      maxWidth: {
-        ch: "60ch",
-      },
-      aspectRatio: {
-        card: "1 / 1.25",
-      },
-      backgroundImage: {
-        shape: "url('./assets/bgshapes.svg')",
-      },
-      borderRadius: {
-        DEFAULT: "var(--radius)",
+        background: "var(--background)",
+        font: "var(--font)",
+        primary: "var(--primary)",
+        navigation: "var(--navigation)",
       },
     },
   },
