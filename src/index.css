@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --font: "#FFFFFF";
-    --background: "#102C3D";
-    --primary: "#DEEB52";
-    --navigation: "#AAC0C8";
+    --white: #FFFFFF;
+    --dark-blue: #102C3D;
+    --yellow: #DEEB52;
+    --light-blue: #AAC0C8;
   }
 }
