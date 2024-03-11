@@ -7,7 +7,7 @@ export default {
         background: "var(--dark-blue)",
         font: "var(--white)",
         primary: "var(--yellow)",
-        navigation: "var(--clr-light-blue)",
+        navigation: "var(--light-blue)",
         bouton: "var(--white)",
       },
     },
