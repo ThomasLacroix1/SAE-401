@@ -8,7 +8,9 @@ export default {
         font: "var(--white)",
         primary: "var(--yellow)",
         navigation: "var(--light-blue)",
-        bouton: "var(--white)",
+        boutonBackground: "var(--white)",
+        boutonFont: "var(--dark-blue)",
+        svg: "var(--white)"
       },
     },
   },

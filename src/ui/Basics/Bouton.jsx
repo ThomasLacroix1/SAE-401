@@ -1,27 +1,30 @@
 import { cva } from "class-variance-authority";
 
 // Base definition
-const base = "";
+const base = "rounded-sm w-fit";
 
 const button = cva(base, {
   variants: {
     intent: {
       primary: [
-        "bg-bouton",
-        "text-white",
+        "bg-boutonBackground",
+        "text-bontonFont",
         "border-transparent",
-        "hover:bg-blue-600",
+        "hover:opacity-75",
       ],
-      secondary: [
-        "bg-red-600",
-        "text-gray-200",
-        "border-gray-400",
-        "hover:bg-gray-100",
+      navigation: [
+        "text-navigation",
+        "hover:text-font",
+      ],
+      underline: [
+        "text-font",
+        "hover:underline",
       ],
     },
     size: {
       small: ["text-sm", "py-1", "px-2"],
       medium: ["text-base", "py-2", "px-4"],
+      bigNoBack: ["text-lg", "font-semibold"],
     },
   },
   compoundVariants: [{ intent: "primary", size: "medium", class: "uppercase" }],

@@ -5,9 +5,11 @@ import Button from '../ui/Basics/Bouton';
 export default function Root() {
 
   return (
-    <div class="bg-background flex gap-4 w-full">
+    <div className="flex flex-col gap-4">
       <NavBar/>
-      <Button>Watch Now</Button>
+      <div className='p-2'>
+        <Button intent="underline" size="bigNoBack">Watch Now</Button>
+      </div>
       {/* <Outlet/> */}
     </div>
   );
