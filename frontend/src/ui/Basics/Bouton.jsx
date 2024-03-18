@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 // Base definition
-const base = "rounded-sm w-fit";
+const base = "rounded w-fit";
 
 const button = cva(base, {
   variants: {
@@ -23,7 +23,7 @@ const button = cva(base, {
     },
     size: {
       small: ["text-sm", "py-1", "px-2"],
-      medium: ["text-base", "py-2", "px-4"],
+      medium: ["text-base", "py-3", "px-4"],
       bigNoBack: ["text-lg", "font-semibold"],
     },
   },

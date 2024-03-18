@@ -8,7 +8,7 @@ export default function Root() {
     <div className="flex flex-col gap-4">
       <NavBar/>
       <div className='p-2'>
-        <Button intent="underline" size="bigNoBack">Watch Now</Button>
+        <Button intent="primary">Watch Now</Button>
       </div>
       {/* <Outlet/> */}
     </div>
