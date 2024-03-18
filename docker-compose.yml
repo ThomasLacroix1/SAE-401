@@ -20,6 +20,8 @@ services:
       - "5173:5173"
     volumes:
       - ./frontend:/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     working_dir: /app
 
   backend:
@@ -53,6 +55,6 @@ services:
       - "8070:80"
     depends_on:
       - mysql
-
+  
 volumes:
   database:
