@@ -168,6 +168,6 @@ class __TwigTemplate_7832588f91de9c889f5e73b616c38a29 extends Template
         </span>
     </button>
 {% endif %}
-", "@EasyAdmin/crud/action.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/action.html.twig");
+", "@EasyAdmin/crud/action.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/action.html.twig");
     }
 }

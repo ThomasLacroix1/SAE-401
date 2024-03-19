@@ -18,12 +18,17 @@ class Movie
     #[Groups(['json_category'])]
    private ?int $id = null;
 
-
-// suite masquée
-
-
     #[ORM\Column(length: 255)]
     private ?string $name = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $description = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $image = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $duree = null;
 
     #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'movies')]
     private Collection $category;
@@ -53,6 +58,42 @@ class Movie
     public function setName(string $name): static
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): static
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(string $image): static
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    public function getDuree(): ?string
+    {
+        return $this->duree;
+    }
+
+    public function setDuree(string $duree): static
+    {
+        $this->duree = $duree;
 
         return $this;
     }

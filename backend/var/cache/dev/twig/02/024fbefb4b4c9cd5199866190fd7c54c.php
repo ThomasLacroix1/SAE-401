@@ -125,6 +125,6 @@ class __TwigTemplate_a5a669419117a586ff8e344be16c3c0d extends Template
         </div>
     </div>
 </div>
-", "@EasyAdmin/crud/includes/_batch_action_modal.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/includes/_batch_action_modal.html.twig");
+", "@EasyAdmin/crud/includes/_batch_action_modal.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/includes/_batch_action_modal.html.twig");
     }
 }

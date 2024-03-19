@@ -134,6 +134,6 @@ class __TwigTemplate_a5f94282d17adb3897b7b5ff79114350 extends Template
         {% for attr, value in css_asset.htmlAttributes %}{{ attr }}=\"{{ value|e('html_attr') }}\" {% endfor %}>
     {% endif %}
 {% endfor %}
-", "@EasyAdmin/includes/_css_assets.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/includes/_css_assets.html.twig");
+", "@EasyAdmin/includes/_css_assets.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/includes/_css_assets.html.twig");
     }
 }

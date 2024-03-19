@@ -458,6 +458,6 @@ class __TwigTemplate_a2def3536cd94ea53156c31320230dd5 extends Template
         </div>
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "/app/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
     }
 }
