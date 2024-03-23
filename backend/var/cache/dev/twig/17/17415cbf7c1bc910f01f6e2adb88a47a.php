@@ -446,6 +446,6 @@ class __TwigTemplate_0b7c137af56ecf66e468cd14892398f5 extends Template
 </article>
 </body>
 </html>
-", "@EasyAdmin/welcome.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/welcome.html.twig");
+", "@EasyAdmin/welcome.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/welcome.html.twig");
     }
 }

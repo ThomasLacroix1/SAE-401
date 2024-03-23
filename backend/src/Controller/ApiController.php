@@ -20,7 +20,15 @@ class ApiController extends AbstractController
         ]);
     }
 
-    #[Route('/api/movie/{id}', name: 'app_api_movie')]
+    #[Route('/api/movies', name: 'app_api_movies')]
+    public function readMovies(Movie $mov, SerializerInterface $serializer ): Response
+    {
+    $data = $serializer->normalize($mov, null, ['groups' => 'json_movie']);
+    $response = new JsonResponse( $data );
+    return $response;
+    }
+
+    #[Route('/api/movies/{id}', name: 'app_api_movie')]
     public function readMovie(Movie $mov, SerializerInterface $serializer ): Response
     {
     $data = $serializer->normalize($mov, null, ['groups' => 'json_movie']);

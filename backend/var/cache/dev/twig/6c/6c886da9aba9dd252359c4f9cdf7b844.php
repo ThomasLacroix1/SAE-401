@@ -183,6 +183,6 @@ class __TwigTemplate_b529ba89cb9824c5a3701bc8a704674f extends Template
         </span>
     {% endfor %}
 {% endif %}
-", "@EasyAdmin/crud/field/country.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/country.html.twig");
+", "@EasyAdmin/crud/field/country.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/country.html.twig");
     }
 }

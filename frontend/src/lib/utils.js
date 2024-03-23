@@ -1,4 +1,3 @@
-
 // fake a cache so we don't slow down stuff we've already seen
 let fakeCache = {};
 

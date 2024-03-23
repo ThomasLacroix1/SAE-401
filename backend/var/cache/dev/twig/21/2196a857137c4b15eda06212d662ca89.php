@@ -104,6 +104,6 @@ class __TwigTemplate_11a457e38d2cdafc9a836a9720acc551 extends Template
        </form>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/app/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }

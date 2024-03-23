@@ -81,6 +81,6 @@ class __TwigTemplate_60b291c8507885114cf9f4b0fa2da283 extends Template
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 {{ field.formattedValue }}
-", "@EasyAdmin/crud/field/timezone.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/timezone.html.twig");
+", "@EasyAdmin/crud/field/timezone.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/timezone.html.twig");
     }
 }
