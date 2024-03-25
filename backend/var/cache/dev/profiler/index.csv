@@ -187,3 +187,11 @@ b20ec7,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711361893,07fb4f,404,re
 484aab,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362076,,404,request
 d69db5,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362143,e3b0ee,404,request
 e3b0ee,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362144,,404,request
+04f719,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362248,82292c,404,request
+82292c,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362249,,404,request
+a83217,172.18.0.1,GET,http://localhost:8080/api/movies/1,1711362730,669459,404,request
+669459,172.18.0.1,GET,http://localhost:8080/api/movies/1,1711362730,,404,request
+099f0f,172.18.0.1,GET,http://localhost:8080/api/movies/1,1711362777,,200,request
+f1ced7,172.18.0.1,GET,http://localhost:8080/favicon.ico,1711362781,9a1ca5,404,request
+9a1ca5,172.18.0.1,GET,http://localhost:8080/favicon.ico,1711362782,,404,request
+70de8f,172.18.0.1,GET,http://localhost:8080/api/movies,1711362789,,200,request
