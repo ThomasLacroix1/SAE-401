@@ -242,6 +242,25 @@
       <parameter>main</parameter>
     </parameter>
     <parameter key="security.logout_uris" type="collection"/>
+<<<<<<< Updated upstream
+=======
+    <parameter key="nelmio_cors.map" type="collection"/>
+    <parameter key="nelmio_cors.defaults" type="collection">
+      <parameter key="allow_origin" type="collection"/>
+      <parameter key="allow_credentials">false</parameter>
+      <parameter key="allow_headers" type="collection"/>
+      <parameter key="expose_headers" type="collection"/>
+      <parameter key="allow_methods" type="collection"/>
+      <parameter key="max_age">0</parameter>
+      <parameter key="hosts" type="collection"/>
+      <parameter key="origin_regex">false</parameter>
+      <parameter key="forced_allow_origin_value">null</parameter>
+      <parameter key="skip_same_as_origin">true</parameter>
+    </parameter>
+    <parameter key="nelmio_cors.cors_listener.class">Nelmio\CorsBundle\EventListener\CorsListener</parameter>
+    <parameter key="nelmio_cors.options_resolver.class">Nelmio\CorsBundle\Options\Resolver</parameter>
+    <parameter key="nelmio_cors.options_provider.config.class">Nelmio\CorsBundle\Options\ConfigProvider</parameter>
+>>>>>>> Stashed changes
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
@@ -6269,6 +6288,30 @@
       <tag name="assets.package" package="easyadmin.assets.package"/>
       <argument type="service" id="request_stack"/>
     </service>
+<<<<<<< Updated upstream
+=======
+    <service id="nelmio_cors.cors_listener" class="Nelmio\CorsBundle\EventListener\CorsListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="250"/>
+      <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse" priority="0"/>
+      <tag name="container.hot_path"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="nelmio_cors.options_resolver"/>
+    </service>
+    <service id="nelmio_cors.options_resolver" class="Nelmio\CorsBundle\Options\Resolver">
+      <argument type="collection">
+        <argument type="service" id="nelmio_cors.options_provider.config"/>
+      </argument>
+    </service>
+    <service id="nelmio_cors.options_provider.config" class="Nelmio\CorsBundle\Options\ConfigProvider">
+      <tag name="nelmio_cors.options_provider" priority="-1"/>
+      <argument type="collection"/>
+      <argument>%nelmio_cors.defaults%</argument>
+    </service>
+    <service id="nelmio_cors.cacheable_response_vary_listener" class="Nelmio\CorsBundle\EventListener\CacheableResponseVaryListener">
+      <tag name="kernel.event_listener" event="kernel.response" method="onResponse" priority="-10"/>
+      <tag name="container.hot_path"/>
+    </service>
+>>>>>>> Stashed changes
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\CategoryCrudController" class="App\Controller\Admin\CategoryCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\CategoryCrudController" class="App\Controller\Admin\CategoryCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\CategoryCrudController" class="App\Controller\Admin\CategoryCrudController" autowire="true" abstract="true"/>
