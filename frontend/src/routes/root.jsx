@@ -12,6 +12,7 @@ export async function moviesLoader(){
 export default function Root() {
 
   const data = useLoaderData();
+  console.log(data);
 
   return (
     <div className="flex flex-col gap-4">
