@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getEntityDto2Service.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getEntityDto2Service.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

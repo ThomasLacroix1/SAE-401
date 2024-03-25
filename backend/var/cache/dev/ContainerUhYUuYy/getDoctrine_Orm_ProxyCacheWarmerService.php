@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getDoctrine_Orm_ProxyCacheWarmerService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getDoctrine_Orm_ProxyCacheWarmerService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

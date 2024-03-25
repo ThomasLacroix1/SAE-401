@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getCommonPostConfiguratorService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getCommonPostConfiguratorService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

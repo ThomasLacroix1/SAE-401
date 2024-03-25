@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getCache_SystemClearerService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getCache_SystemClearerService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

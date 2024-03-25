@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/get_Debug_ValueResolver_Doctrine_Orm_EntityValueResolverService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/get_Debug_ValueResolver_Doctrine_Orm_EntityValueResolverService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/removed-ids.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/removed-ids.php
 
 return [
     '.1_ServiceLocator~20.KACZ' => true,
@@ -263,7 +259,6 @@ return [
     '.service_locator.7NIAq8D' => true,
     '.service_locator.8NWUArH' => true,
     '.service_locator.8NWUArH.router.default' => true,
-    '.service_locator.8XH_INA' => true,
     '.service_locator.9P2n2Z1' => true,
     '.service_locator.9e2t_lq' => true,
     '.service_locator.A1CG8fu' => true,
@@ -279,7 +274,6 @@ return [
     '.service_locator.LMuqDDe' => true,
     '.service_locator.Lazlz4J' => true,
     '.service_locator.LcVn9Hr' => true,
-    '.service_locator.LwZw0PV' => true,
     '.service_locator.Mo0FXEU' => true,
     '.service_locator.NBUFN6A' => true,
     '.service_locator.Nb584vp' => true,
@@ -296,7 +290,6 @@ return [
     '.service_locator.ZP92gqz.App\\Controller\\Admin\\MovieCrudController' => true,
     '.service_locator.ZP92gqz.App\\Controller\\Admin\\UserCrudController' => true,
     '.service_locator._1SGciK' => true,
-    '.service_locator.a4mrkMX' => true,
     '.service_locator.b4Agcrj' => true,
     '.service_locator.bJ.4HC5' => true,
     '.service_locator.cUcW89y' => true,
@@ -978,10 +971,6 @@ return [
     'monolog.logger_prototype' => true,
     'monolog.processor.psr_log_message' => true,
     'name_based_uuid.factory' => true,
-    'nelmio_cors.cacheable_response_vary_listener' => true,
-    'nelmio_cors.cors_listener' => true,
-    'nelmio_cors.options_provider.config' => true,
-    'nelmio_cors.options_resolver' => true,
     'parameter_bag' => true,
     'process.messenger.process_message_handler' => true,
     'profiler.storage' => true,

@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getSecurity_Listener_Main_UserProviderService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getSecurity_Listener_Main_UserProviderService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

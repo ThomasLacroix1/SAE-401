@@ -21,9 +21,6 @@ class ApiController extends AbstractController
         ]);
     }
 
-<<<<<<< Updated upstream
-    #[Route('/api/movie/{id}', name: 'app_api_movie')]
-=======
     // #[Route('/api/movies', name: 'app_api_movies')]
     // public function readMovies(MovieRepository $movieRepository, SerializerInterface $serializer ): Response
     // {
@@ -34,7 +31,6 @@ class ApiController extends AbstractController
     // }
 
     #[Route('/api/movies/{id}', name: 'app_api_movie')]
->>>>>>> Stashed changes
     public function readMovie(Movie $mov, SerializerInterface $serializer ): Response
     {
         $data = $serializer->normalize($mov, null, ['groups' => 'json_movie']);

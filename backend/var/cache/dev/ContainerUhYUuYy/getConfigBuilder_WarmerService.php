@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getConfigBuilder_WarmerService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getConfigBuilder_WarmerService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

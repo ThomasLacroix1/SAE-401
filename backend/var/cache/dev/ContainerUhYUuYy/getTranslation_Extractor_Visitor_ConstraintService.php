@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getTranslation_Extractor_Visitor_ConstraintService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getTranslation_Extractor_Visitor_ConstraintService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

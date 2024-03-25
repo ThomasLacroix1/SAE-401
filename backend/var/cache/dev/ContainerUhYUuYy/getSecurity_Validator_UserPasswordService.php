@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getSecurity_Validator_UserPasswordService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getSecurity_Validator_UserPasswordService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

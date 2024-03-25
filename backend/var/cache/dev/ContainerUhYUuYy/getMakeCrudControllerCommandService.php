@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getMakeCrudControllerCommandService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getMakeCrudControllerCommandService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

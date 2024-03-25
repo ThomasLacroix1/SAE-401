@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getSecurity_Firewall_Map_Context_DevService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getSecurity_Firewall_Map_Context_DevService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

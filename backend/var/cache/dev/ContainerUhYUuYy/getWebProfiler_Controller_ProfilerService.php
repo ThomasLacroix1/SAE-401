@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getWebProfiler_Controller_ProfilerService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getWebProfiler_Controller_ProfilerService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getDataCollector_Request_SessionCollectorService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getDataCollector_Request_SessionCollectorService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

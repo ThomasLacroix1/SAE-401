@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getTranslation_Loader_IniService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getTranslation_Loader_IniService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

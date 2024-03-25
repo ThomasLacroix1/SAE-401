@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/get_Maker_AutoCommand_MakeStimulusController_LazyService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/get_Maker_AutoCommand_MakeStimulusController_LazyService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

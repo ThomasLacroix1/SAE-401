@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/RequestPayloadValueResolverGhost3590451.php
 namespace ContainerUhYUuYy;
-========
-namespace ContainerV6rZdjZ;
->>>>>>>> Stashed changes:backend/var/cache/dev/ContainerV6rZdjZ/RequestPayloadValueResolverGhost3590451.php
 include_once \dirname(__DIR__, 4).'/vendor/symfony/http-kernel/Controller/ValueResolverInterface.php';
 include_once \dirname(__DIR__, 4).'/vendor/symfony/http-kernel/Controller/ArgumentResolver/RequestPayloadValueResolver.php';
 

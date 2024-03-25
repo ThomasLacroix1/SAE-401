@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getDoctrineMigrations_UpToDateCommandService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getDoctrineMigrations_UpToDateCommandService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

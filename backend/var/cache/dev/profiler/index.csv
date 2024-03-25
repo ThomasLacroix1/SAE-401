@@ -183,3 +183,7 @@ fb13bd,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711361803,19447d,404,re
 b20ec7,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711361893,07fb4f,404,request
 07fb4f,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711361894,,404,request
 >>>>>>> Stashed changes
+756e99,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362075,484aab,404,request
+484aab,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362076,,404,request
+d69db5,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362143,e3b0ee,404,request
+e3b0ee,172.18.0.1,GET,http://localhost:8080/id/movies/1,1711362144,,404,request

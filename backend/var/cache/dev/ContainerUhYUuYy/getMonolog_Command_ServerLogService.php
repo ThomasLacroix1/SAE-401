@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getMonolog_Command_ServerLogService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getMonolog_Command_ServerLogService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

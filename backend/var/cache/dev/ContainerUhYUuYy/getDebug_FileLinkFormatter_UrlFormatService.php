@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getDebug_FileLinkFormatter_UrlFormatService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getDebug_FileLinkFormatter_UrlFormatService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

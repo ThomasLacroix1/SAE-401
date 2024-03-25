@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getTwig_Command_DebugService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getTwig_Command_DebugService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

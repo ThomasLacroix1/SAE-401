@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getVarDumper_Command_ServerDumpService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getVarDumper_Command_ServerDumpService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

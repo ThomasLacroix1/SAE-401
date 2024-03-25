@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getMaker_Renderer_FormTypeRendererService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getMaker_Renderer_FormTypeRendererService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

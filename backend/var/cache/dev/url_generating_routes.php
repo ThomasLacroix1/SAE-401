@@ -19,22 +19,14 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'admin' => [[], ['_controller' => 'App\\Controller\\Admin\\DashboardController::index'], [], [['text', '/admin']], [], [], []],
     'app_api' => [[], ['_controller' => 'App\\Controller\\ApiController::index'], [], [['text', '/api']], [], [], []],
-<<<<<<< Updated upstream
-    'app_api_movie' => [['id'], ['_controller' => 'App\\Controller\\ApiController::readMovie'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/movie']], [], [], []],
-=======
     'app_api_movie' => [['id'], ['_controller' => 'App\\Controller\\ApiController::readMovie'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/movies']], [], [], []],
->>>>>>> Stashed changes
     'app_api_category' => [['id'], ['_controller' => 'App\\Controller\\ApiController::readCategory'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/category']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
     'App\Controller\Admin\DashboardController::index' => [[], ['_controller' => 'App\\Controller\\Admin\\DashboardController::index'], [], [['text', '/admin']], [], [], []],
     'App\Controller\ApiController::index' => [[], ['_controller' => 'App\\Controller\\ApiController::index'], [], [['text', '/api']], [], [], []],
-<<<<<<< Updated upstream
-    'App\Controller\ApiController::readMovie' => [['id'], ['_controller' => 'App\\Controller\\ApiController::readMovie'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/movie']], [], [], []],
-=======
     'App\Controller\ApiController::readMovie' => [['id'], ['_controller' => 'App\\Controller\\ApiController::readMovie'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/movies']], [], [], []],
->>>>>>> Stashed changes
     'App\Controller\ApiController::readCategory' => [['id'], ['_controller' => 'App\\Controller\\ApiController::readCategory'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/category']], [], [], []],
     'App\Controller\RegistrationController::register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'App\Controller\SecurityController::login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],

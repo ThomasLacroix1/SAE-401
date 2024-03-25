@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getContainer_GetRoutingConditionServiceService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getContainer_GetRoutingConditionServiceService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

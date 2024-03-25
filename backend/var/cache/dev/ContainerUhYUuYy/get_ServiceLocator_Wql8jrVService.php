@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/get_ServiceLocator_Wql8jrVService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/get_ServiceLocator_Wql8jrVService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

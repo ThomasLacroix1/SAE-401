@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getConsole_CommandLoaderService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getConsole_CommandLoaderService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

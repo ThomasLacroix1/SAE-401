@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getFragment_Renderer_InlineService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getFragment_Renderer_InlineService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

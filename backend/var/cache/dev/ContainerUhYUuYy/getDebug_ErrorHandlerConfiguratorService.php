@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getDebug_ErrorHandlerConfiguratorService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getDebug_ErrorHandlerConfiguratorService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

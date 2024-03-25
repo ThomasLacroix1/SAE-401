@@ -41,8 +41,8 @@ return [
                     .')'
                 .')'
                 .'|/api/(?'
-                    .'|movie/([^/]++)(*:224)'
-                    .'|category/([^/]++)(*:249)'
+                    .'|movies/([^/]++)(*:225)'
+                    .'|category/([^/]++)(*:250)'
                 .')'
             .')/?$}sDu',
     ],
@@ -55,8 +55,8 @@ return [
         168 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         181 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         191 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        224 => [[['_route' => 'app_api_movie', '_controller' => 'App\\Controller\\ApiController::readMovie'], ['id'], null, null, false, true, null]],
-        249 => [
+        225 => [[['_route' => 'app_api_movie', '_controller' => 'App\\Controller\\ApiController::readMovie'], ['id'], null, null, false, true, null]],
+        250 => [
             [['_route' => 'app_api_category', '_controller' => 'App\\Controller\\ApiController::readCategory'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

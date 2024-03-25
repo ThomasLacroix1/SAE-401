@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getForm_Listener_PasswordHasherService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getForm_Listener_PasswordHasherService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

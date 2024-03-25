@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/EntityManagerGhostEbeb667.php
 namespace ContainerUhYUuYy;
-========
-namespace ContainerV6rZdjZ;
->>>>>>>> Stashed changes:backend/var/cache/dev/ContainerV6rZdjZ/EntityManagerGhostEbeb667.php
 include_once \dirname(__DIR__, 4).'/vendor/doctrine/persistence/src/Persistence/ObjectManager.php';
 include_once \dirname(__DIR__, 4).'/vendor/doctrine/orm/src/EntityManagerInterface.php';
 include_once \dirname(__DIR__, 4).'/vendor/doctrine/orm/src/EntityManager.php';

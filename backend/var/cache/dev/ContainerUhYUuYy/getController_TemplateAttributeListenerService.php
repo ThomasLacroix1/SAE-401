@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/getController_TemplateAttributeListenerService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/getController_TemplateAttributeListenerService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;

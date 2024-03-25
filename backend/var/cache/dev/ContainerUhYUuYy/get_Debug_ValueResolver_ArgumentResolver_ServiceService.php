@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/get_Debug_ValueResolver_ArgumentResolver_ServiceService.php
 namespace ContainerUhYUuYy;
-========
-namespace Container0NkFows;
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/get_Debug_ValueResolver_ArgumentResolver_ServiceService.php
 
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
@@ -27,10 +23,6 @@ class get_Debug_ValueResolver_ArgumentResolver_ServiceService extends App_Kernel
         include_once \dirname(__DIR__, 4).'/vendor/symfony/http-kernel/Controller/ArgumentResolver/TraceableValueResolver.php';
         include_once \dirname(__DIR__, 4).'/vendor/symfony/http-kernel/Controller/ArgumentResolver/ServiceValueResolver.php';
 
-<<<<<<<< Updated upstream:backend/var/cache/dev/ContainerUhYUuYy/get_Debug_ValueResolver_ArgumentResolver_ServiceService.php
         return $container->privates['.debug.value_resolver.argument_resolver.service'] = new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\TraceableValueResolver(new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver(($container->privates['.service_locator.KzIi.aI'] ?? $container->load('get_ServiceLocator_KzIi_AIService'))), ($container->services['debug.stopwatch'] ??= new \Symfony\Component\Stopwatch\Stopwatch(true)));
-========
-        return $container->privates['.debug.value_resolver.argument_resolver.service'] = new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\TraceableValueResolver(new \Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver(($container->privates['.service_locator.8XH_INA'] ?? $container->load('get_ServiceLocator_8XHINAService'))), ($container->services['debug.stopwatch'] ??= new \Symfony\Component\Stopwatch\Stopwatch(true)));
->>>>>>>> Stashed changes:backend/var/cache/dev/Container0NkFows/get_Debug_ValueResolver_ArgumentResolver_ServiceService.php
     }
 }
