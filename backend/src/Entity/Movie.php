@@ -22,13 +22,16 @@ class Movie
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
+    private ?string $director = null;
+
+    #[ORM\Column(length: 255)]
     private ?string $description = null;
 
     #[ORM\Column(length: 255)]
     private ?string $image = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $duree = null;
+    private ?string $time = null;
 
     #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'movies')]
     private Collection $category;
@@ -86,14 +89,14 @@ class Movie
         return $this;
     }
 
-    public function getDuree(): ?string
+    public function getTime(): ?string
     {
-        return $this->duree;
+        return $this->time;
     }
 
-    public function setDuree(string $duree): static
+    public function setTime(string $time): static
     {
-        $this->duree = $duree;
+        $this->time = $time;
 
         return $this;
     }
@@ -118,6 +121,30 @@ class Movie
     public function removeCategory(Category $category): static
     {
         $this->category->removeElement($category);
+
+        return $this;
+    }
+
+    /**
+     * Get the value of director
+     *
+     * @return ?string
+     */
+    public function getDirector(): ?string
+    {
+        return $this->director;
+    }
+
+    /**
+     * Set the value of director
+     *
+     * @param ?string $director
+     *
+     * @return self
+     */
+    public function setDirector(?string $director): self
+    {
+        $this->director = $director;
 
         return $this;
     }
