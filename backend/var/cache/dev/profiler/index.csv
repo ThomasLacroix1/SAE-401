@@ -56,3 +56,10 @@ e6c81a,172.20.0.1,GET,http://localhost:8080/api/movies,1711465219,,200,request
 2f4098,172.20.0.1,GET,http://localhost:8080/api/movies,1711465252,,200,request
 6bbf96,172.20.0.1,GET,http://localhost:8080/api/movies,1711465278,,200,request
 14d6f5,172.20.0.1,GET,http://localhost:8080/api/movies,1711465547,,200,request
+bc1edd,172.18.0.1,GET,http://localhost:8080/api/movies,1711468128,f56557,500,request
+f56557,172.18.0.1,GET,http://localhost:8080/api/movies,1711468128,,500,request
+950d59,172.18.0.1,GET,http://localhost:8080/api/movies,1711468200,,200,request
+9e69e7,172.18.0.1,GET,http://localhost:8080/api/movies,1711468209,,200,request
+4d3405,172.18.0.1,GET,http://localhost:8080/api/movies,1711468214,,200,request
+bd8da4,172.18.0.1,GET,http://localhost:8080/api/movies,1711468223,,200,request
+50e2aa,172.18.0.1,GET,http://localhost:8080/api/movies,1711468229,,200,request
