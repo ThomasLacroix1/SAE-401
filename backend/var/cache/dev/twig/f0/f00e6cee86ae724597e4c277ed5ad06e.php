@@ -101,6 +101,6 @@ class __TwigTemplate_d66c5aed94fd3f919398315fcd3a7b52 extends Template
 {% else %}
     <a target=\"_blank\" rel=\"noopener\" href=\"{{ field.value }}\">{{ field.formattedValue }}</a>
 {% endif %}
-", "@EasyAdmin/crud/field/url.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/url.html.twig");
+", "@EasyAdmin/crud/field/url.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/url.html.twig");
     }
 }

@@ -202,6 +202,6 @@ class __TwigTemplate_0a2ca72c068e33d54c35b6c38de5fe70 extends Template
         {{ exception.publicMessage|trans(exception.translationParameters, 'EasyAdminBundle') }}
     </div>
 {% endblock %}
-", "@EasyAdmin/exception.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/exception.html.twig");
+", "@EasyAdmin/exception.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/exception.html.twig");
     }
 }

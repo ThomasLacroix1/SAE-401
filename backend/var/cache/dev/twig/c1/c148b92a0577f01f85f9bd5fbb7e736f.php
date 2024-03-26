@@ -131,6 +131,6 @@ class __TwigTemplate_789ab3cae20188873505024d3112dd5f extends Template
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/table.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
+", "@WebProfiler/Profiler/table.html.twig", "/app/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/table.html.twig");
     }
 }

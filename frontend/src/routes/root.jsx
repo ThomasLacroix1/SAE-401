@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import NavBar from '../ui/NavBar';
 import Button from '../ui/Basics/Bouton';
 import Card from '../ui/Basics/Card';
@@ -17,8 +17,10 @@ export default function Root() {
   return (
     <div className="flex flex-col gap-4">
       <NavBar/>
-      <div className='p-16 flex gap-4'>
-        <Card data={data}/>
+      <div className='p-16 flex gap-4 flex-wrap'>
+        {data.map(el => 
+          <Card {...el}/>)
+        }
       </div>
       {/* <Outlet/> */}
     </div>

@@ -100,6 +100,6 @@ class __TwigTemplate_f9431a20390d313234794930015e8c20 extends Template
 {% if field.customOptions.get('showName') %}
     {{ field.formattedValue ?? '' }}
 {% endif %}
-", "@EasyAdmin/crud/field/language.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/language.html.twig");
+", "@EasyAdmin/crud/field/language.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/language.html.twig");
     }
 }

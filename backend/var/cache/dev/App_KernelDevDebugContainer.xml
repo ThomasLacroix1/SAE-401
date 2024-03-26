@@ -248,13 +248,13 @@
     </parameter>
     <parameter key="security.logout_uris" type="collection"/>
     <parameter key="nelmio_cors.map" type="collection">
-      <parameter key="^/" type="collection">
+      <parameter key="^/api/" type="collection">
         <parameter key="skip_same_as_origin">true</parameter>
       </parameter>
     </parameter>
     <parameter key="nelmio_cors.defaults" type="collection">
       <parameter key="allow_origin" type="collection">
-        <parameter>%env(CORS_ALLOW_ORIGIN)%</parameter>
+        <parameter>http://localhost:8090$</parameter>
       </parameter>
       <parameter key="allow_credentials">false</parameter>
       <parameter key="allow_headers" type="collection">
@@ -5456,22 +5456,7 @@
         </service>
       </argument>
     </service>
-    <service id="security.access_map" class="Symfony\Component\Security\Http\AccessMap">
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.28NqKnb"/>
-        <argument type="collection">
-          <argument>ROLE_ADMIN</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.qiSLnSF"/>
-        <argument type="collection">
-          <argument>ROLE_USER</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-    </service>
+    <service id="security.access_map" class="Symfony\Component\Security\Http\AccessMap"/>
     <service id="security.context_listener" class="Symfony\Component\Security\Http\Firewall\ContextListener">
       <tag name="monolog.logger" channel="security"/>
       <argument type="service" id="security.untracked_token_storage"/>
@@ -5980,22 +5965,6 @@
       <argument type="collection">
         <argument key="security.firewall.map.context.dev" type="service_closure" id="security.firewall.map.context.dev"/>
         <argument key="security.firewall.map.context.main" type="service_closure" id="security.firewall.map.context.main"/>
-      </argument>
-    </service>
-    <service id=".security.request_matcher.obhk0jm" class="Symfony\Component\HttpFoundation\RequestMatcher\PathRequestMatcher">
-      <argument>^/admin</argument>
-    </service>
-    <service id=".security.request_matcher.28NqKnb" class="Symfony\Component\HttpFoundation\ChainRequestMatcher">
-      <argument type="collection">
-        <argument type="service" id=".security.request_matcher.obhk0jm"/>
-      </argument>
-    </service>
-    <service id=".security.request_matcher.O0GhGJy" class="Symfony\Component\HttpFoundation\RequestMatcher\PathRequestMatcher">
-      <argument>^/api/movie</argument>
-    </service>
-    <service id=".security.request_matcher.qiSLnSF" class="Symfony\Component\HttpFoundation\ChainRequestMatcher">
-      <argument type="collection">
-        <argument type="service" id=".security.request_matcher.O0GhGJy"/>
       </argument>
     </service>
     <service id="security.command.user_password_hash" class="Symfony\Component\PasswordHasher\Command\UserPasswordHashCommand">

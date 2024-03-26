@@ -237,6 +237,6 @@ class __TwigTemplate_79196315e841db0a8c203e25447fc4c0 extends Template
         {{- field.formattedValue|escape -}}
     </textarea>
 {% endmacro %}
-", "@EasyAdmin/crud/field/code_editor.html.twig", "/var/www/html/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/code_editor.html.twig");
+", "@EasyAdmin/crud/field/code_editor.html.twig", "/app/backend/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/code_editor.html.twig");
     }
 }
