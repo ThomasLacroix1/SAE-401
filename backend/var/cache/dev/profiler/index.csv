@@ -26,3 +26,13 @@ fc08e9,172.20.0.1,GET,http://localhost:8080/api/movies,1711462577,,200,request
 3ef857,172.20.0.1,GET,http://localhost:8080/api/movies,1711462580,,200,request
 13b543,172.20.0.1,GET,http://localhost:8080/api/movies,1711462644,,200,request
 b1382f,172.20.0.1,GET,http://localhost:8080/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CMovieCrudController,1711462648,,200,request
+a2cc6d,172.20.0.1,GET,http://localhost:8080/api/movies,1711462849,,200,request
+95af33,172.20.0.1,GET,http://localhost:8080/api/movies,1711463035,,200,request
+97b9c9,172.20.0.1,GET,http://localhost:8080/api/movies,1711463079,,200,request
+e934a6,172.20.0.1,GET,http://localhost:8080/api/movies,1711463095,,200,request
+54b901,172.20.0.1,GET,http://localhost:8080/api/movies,1711463134,,200,request
+489244,172.20.0.1,GET,http://localhost:8080/api/movies,1711463155,,200,request
+8f7428,172.20.0.1,GET,http://localhost:8080/api/movies,1711463235,,200,request
+fd4cb1,172.20.0.1,GET,http://localhost:8080/api/movies,1711463246,,200,request
+050c73,172.20.0.1,GET,http://localhost:8080/api/movies,1711463256,,200,request
+faa293,172.20.0.1,GET,http://localhost:8080/api/movies,1711463498,,200,request
