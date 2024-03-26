@@ -34,6 +34,6 @@ const button = cva(base, {
   },
 });
 
-export default function Button({ intent, size, className, ...rest }) {
+export default function Bouton({ intent, size, className, ...rest }) {
   return <button {...rest} className={button({ intent, size, className })} />;
 }

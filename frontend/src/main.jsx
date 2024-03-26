@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Root, {moviesLoader} from './routes/root.jsx';
+import Root from './routes/root.jsx';
+import Home, {moviesLoader} from './routes/home.jsx';
+import Categories from './routes/categories.jsx';
 import About from './routes/about.jsx';
 import ErrorPage from './ui/ErrorPage';
 
@@ -13,19 +15,17 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     // errorElement: <ErrorPage/>,
-    loader: moviesLoader,
-    // children: [
-    //   {
-    //     path: '/buy',
-    //     element: <Buy />,
-    //     loader: buyLoader
-    //   },
-    //   {
-    //     path: '/team/:teamName',
-    //     element: <OurTeams />,
-    //     loader: ourTeamsLoader
-    //   }
-    // ]
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+        loader: moviesLoader,
+      },
+      {
+        path: '/categories',
+        element: <Categories />,
+      }
+    ]
   },
   {
     path: '/about',
