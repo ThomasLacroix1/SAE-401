@@ -54,3 +54,5 @@ f6cef2,172.20.0.1,GET,http://localhost:8080/api/movies,1711465024,,200,request
 fc4eb8,172.20.0.1,GET,http://localhost:8080/api/movies,1711465206,,200,request
 e6c81a,172.20.0.1,GET,http://localhost:8080/api/movies,1711465219,,200,request
 2f4098,172.20.0.1,GET,http://localhost:8080/api/movies,1711465252,,200,request
+6bbf96,172.20.0.1,GET,http://localhost:8080/api/movies,1711465278,,200,request
+14d6f5,172.20.0.1,GET,http://localhost:8080/api/movies,1711465547,,200,request
