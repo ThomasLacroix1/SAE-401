@@ -4,20 +4,19 @@ import Card from '../ui/Basics/Card';
 import { fetchMovies } from '../lib/loaders';
 
 export async function moviesLoader(){
-  let movies = fetchMovies();
+  let movies = await fetchMovies();
   return movies;
 }
 
 export default function Home() {
 
   const data = useLoaderData();
-  console.log(data);
 
   return (
     <div className="flex flex-col gap-4">
       <div className='p-16 flex gap-4 flex-wrap'>
         {data.map(el => 
-          <Card {...el}/>)
+          <Card key={el.name} {...el}/>)
         }
       </div>
     </div>

@@ -1,19 +1,18 @@
-import { Outlet, useLoaderData } from 'react-router-dom';
-import Button from '../ui/Basics/Bouton';
-import Card from '../ui/Basics/Card';
-import { fetchMovies } from '../lib/loaders';
+import { Outlet, defer, useLoaderData, Await } from 'react-router-dom';
+import { fetchMovies, fetchCategory } from '../lib/loaders';
+import Categories from '../ui/Categories';
 
-// export async function moviesLoader(){
-//   let movies = fetchMovies();
-//   return movies;
-// }
+export async function moviesbycatLoader(){
+  let categories = await fetchCategory();
+  let movies = await fetchMovies();
+  return {mov:movies, cat:categories};
+}
 
-export default function Categories() {
+export default function CategoriesPage() {
 
-//   const data = useLoaderData();
-//   console.log(data);
+  const {cat, mov} = useLoaderData();
 
   return (
-    <></>
+      <Categories cat={cat} mov={mov}/>
   );
 }

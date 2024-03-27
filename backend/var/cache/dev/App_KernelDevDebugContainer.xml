@@ -472,7 +472,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.yyCls0I"/>
+      <argument type="service" id=".service_locator.AVJ7unk"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -2740,7 +2740,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.yyCls0I"/>
+      <argument type="service" id=".service_locator.AVJ7unk"/>
     </service>
     <service id="debug.log_processor" class="Symfony\Bridge\Monolog\Processor\DebugProcessor">
       <tag name="kernel.reset" method="reset"/>
@@ -6896,6 +6896,13 @@
         <argument key="serializer" type="service_closure" id="debug.serializer"/>
       </argument>
     </service>
+    <service id=".service_locator.PBG2wff" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="catRepository" type="service_closure" id="App\Repository\CategoryRepository"/>
+        <argument key="serializer" type="service_closure" id="debug.serializer"/>
+      </argument>
+    </service>
     <service id=".service_locator.ohYd3Vy" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6916,7 +6923,7 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.yyCls0I" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.AVJ7unk" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\CategoryCrudController::autocomplete" type="service_closure" id=".service_locator.t9B7cZ4"/>
@@ -6983,6 +6990,7 @@
         <argument key="App\Controller\Admin\UserCrudController::persistEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
         <argument key="App\Controller\Admin\UserCrudController::renderFilters" type="service_closure" id=".service_locator.t9B7cZ4"/>
         <argument key="App\Controller\Admin\UserCrudController::updateEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\ApiController::readCategories" type="service_closure" id=".service_locator.PBG2wff"/>
         <argument key="App\Controller\ApiController::readCategory" type="service_closure" id=".service_locator.ohYd3Vy"/>
         <argument key="App\Controller\ApiController::readMovie" type="service_closure" id=".service_locator.Wql8jrV"/>
         <argument key="App\Controller\ApiController::readMovies" type="service_closure" id=".service_locator.rvdmmlk"/>
@@ -7056,6 +7064,7 @@
         <argument key="App\Controller\Admin\UserCrudController:persistEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
         <argument key="App\Controller\Admin\UserCrudController:renderFilters" type="service_closure" id=".service_locator.t9B7cZ4"/>
         <argument key="App\Controller\Admin\UserCrudController:updateEntity" type="service_closure" id=".service_locator.CsMkqUa"/>
+        <argument key="App\Controller\ApiController:readCategories" type="service_closure" id=".service_locator.PBG2wff"/>
         <argument key="App\Controller\ApiController:readCategory" type="service_closure" id=".service_locator.ohYd3Vy"/>
         <argument key="App\Controller\ApiController:readMovie" type="service_closure" id=".service_locator.Wql8jrV"/>
         <argument key="App\Controller\ApiController:readMovies" type="service_closure" id=".service_locator.rvdmmlk"/>
@@ -8991,7 +9000,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Contracts\Orm\EntityPaginatorInterface" alias="EasyCorp\Bundle\EasyAdminBundle\Orm\EntityPaginator"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.bJ.4HC5" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.yyCls0I"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.AVJ7unk"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
@@ -9034,6 +9043,7 @@
     <service id=".service_locator.uoBNKjJ" alias=".service_locator.t7nLwyX"/>
     <service id=".service_locator.wGxAt.5" alias=".service_locator.rvdmmlk"/>
     <service id=".service_locator.0.NW8Hd" alias=".service_locator.Wql8jrV"/>
+    <service id=".service_locator.Vz_pBn3" alias=".service_locator.PBG2wff"/>
     <service id=".service_locator.EME7giA" alias=".service_locator.ohYd3Vy"/>
     <service id=".service_locator.qnm_CJ1" alias=".service_locator.V6D1oJY"/>
     <service id=".service_locator.7NIAq8D" alias=".service_locator.rSTd.nA"/>

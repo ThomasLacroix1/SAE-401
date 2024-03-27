@@ -6,6 +6,7 @@ use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Entity\Movie;
 use App\Entity\Category;
+use App\Repository\CategoryRepository;
 use App\Repository\MovieRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -38,7 +39,16 @@ class ApiController extends AbstractController
         return $response;
     }
 
-    #[Route('/api/category/{id}', name: 'app_api_category')]
+    #[Route('/api/categories', name: 'app_api_categories')]
+    public function readCategories(CategoryRepository $catRepository, SerializerInterface $serializer ): Response
+    {
+        $cat = $catRepository->findAll() ;
+        $data = $serializer->normalize($cat, null, ['groups' => 'json_category']);
+        $response = new JsonResponse( $data );
+        return $response;
+    }
+
+    #[Route('/api/categories/{id}', name: 'app_api_category')]
     public function readCategory(Category $cat, SerializerInterface $serializer ): Response
     {
         $data = $serializer->normalize($cat, null, ['groups' => 'json_category']);
