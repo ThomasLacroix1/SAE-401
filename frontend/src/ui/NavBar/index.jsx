@@ -5,12 +5,12 @@ export default function NavBar() {
 
     return (
       <nav className="bg-background flex items-center justify-between px-12 py-4 border-b-2 border-b-primary">
-        <img className="w-20 p-2.5" src="assets/images/logo-itvX.webp" alt="Logo"/>
+        <img className="w-20 p-2.5" src="/assets/images/logo-itvX.webp" alt="Logo"/>
         <div className='flex flex-row gap-4'>
           <Link to="/">
             <Bouton intent="navigation" size="bigNoBack" className="uppercase">Home</Bouton>
           </Link>
-          <Link to="/categories">
+          <Link to="/categories/0">
             <Bouton intent="navigation" size="bigNoBack" className="uppercase">Categories</Bouton>
           </Link>
         </div>

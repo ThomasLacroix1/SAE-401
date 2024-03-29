@@ -47,3 +47,6 @@ docker-compose up -d
 - Frontend : [http://localhost:8090](http://localhost:8090)
 - Backend : [http://localhost:8080](http://localhost:8080)
 - phpMyAdmin : [http://localhost:8788](http://localhost:8788)
+
+
+BUNDLE PROFIL : JWT

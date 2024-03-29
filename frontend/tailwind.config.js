@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         background: "var(--dark-blue)",
+        secondaryBackground: "var(--blue)",
         font: "var(--white)",
         primary: "var(--yellow)",
         navigation: "var(--light-blue)",

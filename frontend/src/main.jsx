@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
 import Home, {moviesLoader} from './routes/home.jsx';
-import CategoriesPage, {moviesbycatLoader} from './routes/categories.jsx';
+import CategoriesNav, {categoryLoader} from './routes/categoriesNav.jsx';
+import CategoriesPage, {moviesbycatLoader} from './routes/categoriesPage.jsx'
 import About from './routes/about.jsx';
 import ErrorPage from './ui/ErrorPage';
 
@@ -23,8 +24,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/categories',
-        element: <CategoriesPage />,
-        loader: moviesbycatLoader,
+        element: <CategoriesNav />,
+        loader: categoryLoader,
+        children: [
+          {
+            path: '/categories/:catId',
+            element: <CategoriesPage />,
+            loader: moviesbycatLoader,
+          }
+        ]
       }
     ]
   },
