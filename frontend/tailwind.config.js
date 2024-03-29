@@ -12,10 +12,12 @@ export default {
         boutonBackground: "var(--white)",
         boutonFont: "var(--dark-blue)",
         svg: "var(--white)",
+        primaryImportant: "var(--yellow) !important"
       },
       spacing: {
         'cardWidth': '27rem',
         'cardHeight': '40rem',
+        3: "0.75rem",
       },
       scale: {
         '102': '1.02',

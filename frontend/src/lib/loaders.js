@@ -8,10 +8,11 @@ export async function fetchMoviesByCat(cat) {
     let answer = await fetch('http://localhost:8080/api/movies');
     let data = await answer.json();
     let tab = [];
-    for (let el in data){
-        for (let cate in el.category){
+    for (let el of data){
+        for (let cate of el.category){
+            console.log("fetch", cate.id, cat)
             if (cate.id == cat){
-                tab += el;
+                tab.push(el);
             }
         }
     };
