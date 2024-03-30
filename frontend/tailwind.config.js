@@ -12,12 +12,15 @@ export default {
         boutonBackground: "var(--white)",
         boutonFont: "var(--dark-blue)",
         svg: "var(--white)",
-        primaryImportant: "var(--yellow) !important"
       },
       spacing: {
-        'cardWidth': '27rem',
-        'cardHeight': '40rem',
+        'cardWidth': '23rem',
+        'cardHeight': '34rem',
         3: "0.75rem",
+        "searchBar": "90%",
+      },
+      borderWidth: {
+        1: "1px",
       },
       scale: {
         '102': '1.02',

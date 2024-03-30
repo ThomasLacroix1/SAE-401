@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
-import Home, {moviesLoader} from './routes/home.jsx';
+import Home, {moviesLoader as homeMoviesLoader} from './routes/home.jsx';
 import CategoriesNav, {categoryLoader} from './routes/categoriesNav.jsx';
+import SearchPage, {moviesLoader as SearchMoviesLoader} from './routes/search.jsx';
 import CategoriesPage, {moviesbycatLoader} from './routes/categoriesPage.jsx'
 import About from './routes/about.jsx';
 import ErrorPage from './ui/ErrorPage';
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: moviesLoader,
+        loader: homeMoviesLoader,
       },
       {
         path: '/categories',
@@ -33,7 +34,12 @@ const router = createBrowserRouter([
             loader: moviesbycatLoader,
           }
         ]
-      }
+      },
+      {
+        path: '/search',
+        element: <SearchPage />,
+        loader: SearchMoviesLoader,
+      },
     ]
   },
   {

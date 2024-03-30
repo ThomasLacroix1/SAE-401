@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import { fetchMovies } from '../lib/loaders';
 import Movies from '../ui/Movies';
 
@@ -12,6 +12,9 @@ export default function Home() {
   const data = useLoaderData();
 
   return (
-    <Movies data={data}/>
+    <div className='p-10'>
+      <Movies data={data}/>
+    </div>
+    
   );
 }
