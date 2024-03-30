@@ -49,10 +49,16 @@ class ApiController extends AbstractController
     }
 
     #[Route('/api/categories/{id}', name: 'app_api_category')]
-    public function readCategory(Category $cat, SerializerInterface $serializer ): Response
+    public function readCategory(Category $cat, SerializerInterface $serializer, MovieRepository $movieRepository): Response
     {
-        $data = $serializer->normalize($cat, null, ['groups' => 'json_category']);
-        $response = new JsonResponse( $data );
-        return $response;
+    $movies = $movieRepository->findByCategory($cat);
+    
+    $normalizedMovies = $serializer->normalize($movies, null, ['groups' => 'json_movie']);
+
+    $normalizedCategory = $serializer->normalize($cat, null, ['groups' => 'json_category']);
+
+    $data = array_merge($normalizedCategory, ['movies' => $normalizedMovies]);
+
+    return new JsonResponse($data);
     }
 }

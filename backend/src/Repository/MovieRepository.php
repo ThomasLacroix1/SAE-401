@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Movie;
+use App\Entity\Category;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -45,4 +46,13 @@ class MovieRepository extends ServiceEntityRepository
     //            ->getOneOrNullResult()
     //        ;
     //    }
+
+    public function findByCategory(Category $category){
+        return $this->createQueryBuilder('m')
+            ->join('m.category', 'c')
+            ->where('c.id = :categoryId')
+            ->setParameter('categoryId', $category->getId())
+            ->getQuery()
+            ->getResult();
+    }
 }
