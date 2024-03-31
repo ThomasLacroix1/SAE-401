@@ -20,7 +20,9 @@ class MovieCrudController extends AbstractCrudController
        yield TextField::new('name');
        yield TextField::new('director');
        yield TextField::new('description');
+       yield TextField::new('synopsis'); 
        yield TextField::new('image');
+       yield TextField::new('horizontal_image');
        yield TextField::new('time');
        yield AssociationField::new('category');
    }

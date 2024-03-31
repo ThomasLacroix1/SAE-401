@@ -27,8 +27,14 @@ class Movie
     #[ORM\Column(length: 255)]
     private ?string $description = null;
 
+    #[ORM\Column(length: 510)]
+    private ?string $synopsis = null;
+
     #[ORM\Column(length: 255)]
     private ?string $image = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $horizontal_image = null;
 
     #[ORM\Column(length: 255)]
     private ?string $time = null;
@@ -145,6 +151,54 @@ class Movie
     public function setDirector(?string $director): self
     {
         $this->director = $director;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of synopsis
+     *
+     * @return ?string
+     */
+    public function getSynopsis(): ?string
+    {
+        return $this->synopsis;
+    }
+
+    /**
+     * Set the value of synopsis
+     *
+     * @param ?string $synopsis
+     *
+     * @return self
+     */
+    public function setSynopsis(?string $synopsis): self
+    {
+        $this->synopsis = $synopsis;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of horizontal_image
+     *
+     * @return ?string
+     */
+    public function getHorizontalImage(): ?string
+    {
+        return $this->horizontal_image;
+    }
+
+    /**
+     * Set the value of horizontal_image
+     *
+     * @param ?string $horizontal_image
+     *
+     * @return self
+     */
+    public function setHorizontalImage(?string $horizontal_image): self
+    {
+        $this->horizontal_image = $horizontal_image;
 
         return $this;
     }

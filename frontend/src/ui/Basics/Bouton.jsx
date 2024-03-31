@@ -23,8 +23,9 @@ const button = cva(base, {
     },
     size: {
       small: ["text-sm", "py-1", "px-2", "rounded"],
-      medium: ["text-base", "py-3", "px-4", "rounded"],
+      medium: ["text-base", "py-3", "px-4", "rounded", "font-semibold"],
       bigNoBack: ["text-lg", "py-3", "px-4", "font-semibold"],
+      big: ["text-lg", "py-3", "px-4", "rounded", "font-semibold", "w-96", "flex", "justify-center", "items-center", "gap-3"],
     },
   },
   compoundVariants: [{ intent: "primary", size: "medium", class: "uppercase" }],

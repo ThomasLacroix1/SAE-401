@@ -12,12 +12,14 @@ export default {
         boutonBackground: "var(--white)",
         boutonFont: "var(--dark-blue)",
         svg: "var(--white)",
+        details: "var(--light-blue)",
       },
       spacing: {
         'cardWidth': '23rem',
         'cardHeight': '34rem',
         3: "0.75rem",
         "searchBar": "90%",
+        "movieLeft": "5%"
       },
       borderWidth: {
         1: "1px",
@@ -30,6 +32,14 @@ export default {
       },
       backgroundImage: {
         backgroundGradient: "linear-gradient(180deg, transparent 50%,rgba(0,0,0,.95))",
+        movieGradient: "linear-gradient(270deg, transparent, var(--dark-blue) 90%)",
+        movieGradient2: "linear-gradient(180deg, transparent 40%, var(--dark-blue))"
+      },
+      aspectRatio: {
+        '6/8': '6/8',
+      },
+      dropShadow: {
+        movie: "1px 4px 4px rgba(0,0,0,.5)",
       }
     },
   },
