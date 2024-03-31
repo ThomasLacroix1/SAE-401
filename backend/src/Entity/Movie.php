@@ -39,6 +39,9 @@ class Movie
     #[ORM\Column(length: 255)]
     private ?string $time = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $url = null;
+
     #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'movies')]
     private Collection $category;
 
@@ -199,6 +202,30 @@ class Movie
     public function setHorizontalImage(?string $horizontal_image): self
     {
         $this->horizontal_image = $horizontal_image;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of url
+     *
+     * @return ?string
+     */
+    public function getUrl(): ?string
+    {
+        return $this->url;
+    }
+
+    /**
+     * Set the value of url
+     *
+     * @param ?string $url
+     *
+     * @return self
+     */
+    public function setUrl(?string $url): self
+    {
+        $this->url = $url;
 
         return $this;
     }

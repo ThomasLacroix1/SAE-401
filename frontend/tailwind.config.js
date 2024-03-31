@@ -18,8 +18,10 @@ export default {
         'cardWidth': '23rem',
         'cardHeight': '34rem',
         3: "0.75rem",
+        "movieHeight": "45rem",
         "searchBar": "90%",
-        "movieLeft": "5%"
+        "movieLeft": "5%",
+        "videoWidth": "50rem"
       },
       borderWidth: {
         1: "1px",
@@ -36,7 +38,7 @@ export default {
         movieGradient2: "linear-gradient(180deg, transparent 40%, var(--dark-blue))"
       },
       aspectRatio: {
-        '6/8': '6/8',
+        '16/9': '16/9',
       },
       dropShadow: {
         movie: "1px 4px 4px rgba(0,0,0,.5)",
