@@ -37,15 +37,19 @@ class MovieRepository extends ServiceEntityRepository
     //        ;
     //    }
 
-    //    public function findOneBySomeField($value): ?Movie
-    //    {
-    //        return $this->createQueryBuilder('m')
-    //            ->andWhere('m.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->getQuery()
-    //            ->getOneOrNullResult()
-    //        ;
-    //    }
+        /**
+        * @return Movie[] Returns an array of Movie objects
+        */
+       public function findInFront(): array
+       {
+           return $this->createQueryBuilder('m')
+               ->andWhere('m.in_front = :in_front')
+               ->setParameter('in_front', true)
+               ->setMaxResults(5)
+               ->getQuery()
+               ->getResult()
+           ;
+       }
 
     public function findByCategory(Category $category){
         return $this->createQueryBuilder('m')

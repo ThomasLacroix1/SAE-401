@@ -35,13 +35,11 @@ export default function Movie({ name, director, synopsis, horizontal_image, time
                     <svg fill="#000000" height="14px" id="play" viewBox="0 0 224.075 224.075">
                         <g><g><path d="M216.2,99.23L20.5,1.63c-2.1-1.1-4.8-1.6-6.9-1.6v0C5.7,0.53,0,6.33,0,14.23v195.7c0,10.5,11,17.3,20.5,12.6l195.7-98.1 C226.7,119.23,226.7,104.53,216.2,99.23z M27.8,187.33V36.73l150.6,75L27.8,187.33z" /></g></g>
                     </svg>
-                    Watch
+                    Regarder
                 </Bouton>
             </div>
-            <div className="relative w-full h-movieHeight overflow-hidden z-0">
-                <img src={horizontal_image} alt={name} className="w-full h-auto" />
-                <div className="absolute top-0 left-0 w-full h-full bg-movieGradient"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-movieGradient2"></div>
+            <div className="relative w-full max-h-movieHeight h-fit overflow-hidden z-0 after:absolute after:inset-0 after:bg-movieGradient before:absolute before:bg-movieGradient2 before:inset-0">
+                <img src={horizontal_image} alt={name} className="w-full h-full object-cover object-top"/>
             </div>
         </div>
         {isOpen && (

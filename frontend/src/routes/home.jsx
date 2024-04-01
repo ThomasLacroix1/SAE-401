@@ -1,20 +1,24 @@
 import { useLoaderData } from 'react-router-dom';
-import { fetchMovies } from '../lib/loaders';
+import { fetchMovies, fetchMoviesInFront } from '../lib/loaders';
 import Movies from '../ui/Movies';
+import Carrousel from '../ui/Carrousel';
 
 export async function moviesLoader(){
   let movies = await fetchMovies();
-  return movies;
+  let inFront = await fetchMoviesInFront();
+  return {mov:movies, inFront};
 }
 
 export default function Home() {
 
-  const data = useLoaderData();
+  const {mov, inFront} = useLoaderData();
 
   return (
-    <div className='p-10'>
-      <Movies data={data}/>
-    </div>
-    
+    <>
+      <Carrousel data={inFront}/>
+      <div className='mt-6 p-10'>
+        <Movies data={mov}/>
+      </div>
+    </>
   );
 }

@@ -45,6 +45,9 @@ class Movie
     #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'movies')]
     private Collection $category;
 
+    #[ORM\Column]
+    private ?bool $in_front = null;
+
     public function __construct()
     {
         $this->category = new ArrayCollection();
@@ -226,6 +229,18 @@ class Movie
     public function setUrl(?string $url): self
     {
         $this->url = $url;
+
+        return $this;
+    }
+
+    public function isInFront(): ?bool
+    {
+        return $this->in_front;
+    }
+
+    public function setInFront(bool $in_front): static
+    {
+        $this->in_front = $in_front;
 
         return $this;
     }

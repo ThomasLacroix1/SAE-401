@@ -61,4 +61,13 @@ class ApiController extends AbstractController
 
     return new JsonResponse($data);
     }
+
+    #[Route('/api/movies_in_front', name: 'app_api_movies_in_front')]
+    public function readMoviesInFront(MovieRepository $movieRepository, SerializerInterface $serializer ): Response
+    {
+        $mov = $movieRepository->findInFront() ;
+        $data = $serializer->normalize($mov, null, ['groups' => 'json_movie']);
+        $response = new JsonResponse( $data );
+        return $response;
+    }
 }

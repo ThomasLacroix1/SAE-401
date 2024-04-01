@@ -21,3 +21,10 @@ export async function fetchCategory() {
     let data = await answer.json();
     return data; 
 }
+
+export async function fetchMoviesInFront() {
+    let answer = await fetch('http://localhost:8080/api/movies_in_front');
+    let data = await answer.json();
+    return data; 
+}
+

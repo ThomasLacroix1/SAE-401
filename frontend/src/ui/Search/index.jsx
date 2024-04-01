@@ -7,7 +7,7 @@ export default function Search({ data }) {
     const handleChange = (event) => {
         const searchTerm = event.target.value.toLowerCase();
         const results = data.filter(movie => movie.name.toLowerCase().includes(searchTerm) || movie.director.toLowerCase().includes(searchTerm));
-        console.log(results)
+        setSearchResults(results);
     };
 
     return (

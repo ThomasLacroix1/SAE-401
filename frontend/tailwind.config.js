@@ -21,6 +21,8 @@ export default {
         "movieHeight": "45rem",
         "searchBar": "90%",
         "movieLeft": "5%",
+        "carrouselTop": "60%",
+        "carrouselHeight": "40rem",
         "videoWidth": "50rem"
       },
       borderWidth: {
@@ -41,7 +43,10 @@ export default {
         '16/9': '16/9',
       },
       dropShadow: {
-        movie: "1px 4px 4px rgba(0,0,0,.5)",
+        "movie": "1px 4px 4px rgba(0,0,0,.5)",
+      },
+      boxShadow: {
+        "dot": "0 -1px 0.75rem #fff",
       }
     },
   },

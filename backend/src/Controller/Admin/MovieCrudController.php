@@ -7,6 +7,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 
 class MovieCrudController extends AbstractCrudController
 {
@@ -25,6 +26,7 @@ class MovieCrudController extends AbstractCrudController
        yield TextField::new('horizontal_image');
        yield TextField::new('time');
        yield TextField::new('url');
+       yield BooleanField::new('in_front');
        yield AssociationField::new('category');
    }
 
