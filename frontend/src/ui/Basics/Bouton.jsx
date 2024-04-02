@@ -13,7 +13,6 @@ const button = cva(base, {
         "hover:opacity-75",
       ],
       navigation: [
-        "text-navigation",
         "hover:text-font",
       ],
       underline: [
@@ -26,6 +25,7 @@ const button = cva(base, {
       medium: ["text-base", "py-3", "px-4", "rounded", "font-semibold"],
       navigation: ["text-lg", "font-semibold"],
       catNavigation: ["text-lg", "py-3", "px-4", "font-semibold"],
+      footer: ["text-lg", "font-semibold"],
       big: ["text-lg", "py-3", "px-4", "rounded", "font-semibold", "w-96", "flex", "justify-center", "items-center", "gap-3"],
     },
   },

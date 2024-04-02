@@ -17,6 +17,8 @@ export default {
       spacing: {
         'cardWidth': '23rem',
         'cardHeight': '34rem',
+        'hCardWidth': '30rem',
+        'hCardHeight': '20rem',
         3: "0.75rem",
         "movieHeight": "45rem",
         "searchBar": "90%",
@@ -47,6 +49,10 @@ export default {
       },
       boxShadow: {
         "dot": "0 -1px 0.75rem #fff",
+        "CardBox": "0px 0px 15px 1px rgba(255,255,255,.5)",
+      },
+      fontSize: {
+        hCardText: "13px",
       }
     },
   },
