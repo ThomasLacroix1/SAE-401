@@ -26,7 +26,7 @@ export default function Carrousel({ data }) {
             <div className="relative">
                 {data.map((elmt, index) => (
                     <div key={ index } className={`relative ${index === currentIndex ? '' : 'hidden'}`}>
-                        <div className="absolute flex flex-col gap-6 z-10 top-1/4 left-movieLeft">
+                        <div className="absolute flex flex-col gap-6 z-10 top-1/4 left-movieLeft w-movieText">
                             <h1 className="text-font font-bold text-3xl drop-shadow-movie">{elmt.name}</h1>
                             <div className="text-details text-sm">
                                 {elmt.category.map((el, index) => (

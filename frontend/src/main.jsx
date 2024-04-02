@@ -8,7 +8,6 @@ import CategoriesNav, {categoryLoader} from './routes/categoriesNav.jsx';
 import SearchPage, {moviesLoader as SearchMoviesLoader} from './routes/search.jsx';
 import CategoriesPage, {moviesbycatLoader} from './routes/categoriesPage.jsx';
 import MoviePage, {movieLoader} from './routes/movie.jsx'
-import About from './routes/about.jsx';
 import ErrorPage from './ui/ErrorPage';
 
 import './index.css';
@@ -49,10 +48,6 @@ const router = createBrowserRouter([
       
     ]
   },
-  {
-    path: '/about',
-    element: <About />
-  }
 ]);
 
 const rootElement = document.querySelector('#root');

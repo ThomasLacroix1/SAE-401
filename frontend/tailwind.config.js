@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'mobile': { 'raw': '(max-width: 550px)' },
+      },
       colors: {
         background: "var(--dark-blue)",
         secondaryBackground: "var(--blue)",
@@ -17,15 +20,17 @@ export default {
       spacing: {
         'cardWidth': '23rem',
         'cardHeight': '34rem',
-        'hCardWidth': '30rem',
-        'hCardHeight': '20rem',
+        'hCardWidth': '26rem',
+        'hCardHeight': '18rem',
         3: "0.75rem",
         "movieHeight": "45rem",
         "searchBar": "90%",
-        "movieLeft": "5%",
+        "movieLeft": "4%",
+        "movieText": "70%",
         "carrouselTop": "60%",
         "carrouselHeight": "40rem",
-        "videoWidth": "50rem"
+        "videoWidth": "50rem",
+        "footerWidth": "85%",
       },
       borderWidth: {
         1: "1px",

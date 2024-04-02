@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Carrousel data={inFront}/>
-      <div className='mt-6 p-10'>
+      <div className='mt-6 p-movieLeft'>
         <Movies data={mov}/>
       </div>
     </>

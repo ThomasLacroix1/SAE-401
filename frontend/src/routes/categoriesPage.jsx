@@ -12,7 +12,7 @@ export default function CategoriesPage() {
   const mov = useLoaderData();
   
   return (
-    <div className='p-10'>
+    <div className='px-movieLeft py-10'>
       <Movies data={mov}></Movies>
     </div>
   );
