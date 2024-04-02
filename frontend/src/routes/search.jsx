@@ -12,7 +12,7 @@ export default function SearchPage() {
   const data = useLoaderData();
 
   return (
-    <div className='p-10'>
+    <div className='p-movieLeft'>
         <Search data={data}/>
     </div>
   );

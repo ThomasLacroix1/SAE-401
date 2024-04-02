@@ -17,7 +17,7 @@ export default function NavBar() {
           <NavLink to="/" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}> 
             <Bouton intent="navigation" size="navigation" className="uppercase">Accueil</Bouton>
           </NavLink>
-          <NavLink to="/categories/1" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}>
+          <NavLink to="/categories/3" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}>
             <Bouton intent="navigation" size="navigation" className="uppercase">Categories</Bouton>
           </NavLink>
         </div>
@@ -39,7 +39,7 @@ export default function NavBar() {
         <NavLink to="/" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}> 
           <Bouton intent="navigation" size="navigation" className="uppercase text-sm">Accueil</Bouton>
         </NavLink>
-        <NavLink to="/categories/1" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}>
+        <NavLink to="/categories/3" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}>
           <Bouton intent="navigation" size="navigation" className="uppercase text-sm">Categories</Bouton>
         </NavLink>
       </nav>

@@ -18,10 +18,10 @@ export default {
         details: "var(--light-blue)",
       },
       spacing: {
-        'cardWidth': '23rem',
-        'cardHeight': '34rem',
-        'hCardWidth': '26rem',
-        'hCardHeight': '18rem',
+        'cardWidth': '21rem',
+        'cardHeight': '31rem',
+        'hCardWidth': '21rem',
+        'hCardHeight': '17rem',
         3: "0.75rem",
         "movieHeight": "45rem",
         "searchBar": "90%",
@@ -29,8 +29,10 @@ export default {
         "movieText": "70%",
         "carrouselTop": "60%",
         "carrouselHeight": "40rem",
+        "mobileCarrouselHeight": "30rem",
         "videoWidth": "50rem",
         "footerWidth": "85%",
+        "catNav": ".48rem",
       },
       borderWidth: {
         1: "1px",
@@ -54,6 +56,7 @@ export default {
       },
       boxShadow: {
         "dot": "0 -1px 0.75rem #fff",
+        "cat": "4px 0px 10px 1px rgba(0,0,0,.5)",
         "CardBox": "0px 0px 15px 1px rgba(255,255,255,.5)",
       },
       fontSize: {

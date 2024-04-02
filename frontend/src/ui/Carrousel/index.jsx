@@ -4,6 +4,7 @@ import Bouton from "../Basics/Bouton";
 
 export default function Carrousel({ data }) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 550);
 
     const goToNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
@@ -21,14 +22,26 @@ export default function Carrousel({ data }) {
         return () => clearInterval(timer);
     }, [currentIndex, data.length]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsLargeScreen(window.innerWidth > 550);
+        };
+  
+        window.addEventListener('resize', handleResize);
+  
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }; 
+    }, []);
+
     return (
         <div className="overflow-hidden">
             <div className="relative">
                 {data.map((elmt, index) => (
                     <div key={ index } className={`relative ${index === currentIndex ? '' : 'hidden'}`}>
-                        <div className="absolute flex flex-col gap-6 z-10 top-1/4 left-movieLeft w-movieText">
-                            <h1 className="text-font font-bold text-3xl drop-shadow-movie">{elmt.name}</h1>
-                            <div className="text-details text-sm">
+                        <div className="absolute flex flex-col gap-6 mobile:gap-4 z-10 top-1/4 left-movieLeft w-movieText">
+                            <h1 className="text-font font-bold text-3xl drop-shadow-movie mobile:text-xl">{elmt.name}</h1>
+                            <div className="text-details text-sm mobile:text-xs">
                                 {elmt.category.map((el, index) => (
                                     <React.Fragment key={index}>
                                         <span className="uppercase font-medium">{el.name}</span>
@@ -39,13 +52,19 @@ export default function Carrousel({ data }) {
                                 <span className="uppercase font-medium">{elmt.time}</span>
                             </div>
                             <div className="flex flex-col gap-3">
-                                <p className="text-font drop-shadow-movie">{elmt.description}</p>
+                                <p className="text-font text-lg mobile:text-xs drop-shadow-movie">{elmt.description}</p>
                             </div>
+                            {isLargeScreen ? 
                             <Link to={`/movie/${elmt.id}`}><Bouton size="big" className="uppercase">
                                 En Savoir Plus
+                            </Bouton></Link> 
+                            : 
+                            <Link to={`/movie/${elmt.id}`}><Bouton size="small" className="uppercase">
+                                En Savoir Plus
                             </Bouton></Link>
+                            }
                         </div>
-                        <div className="relative w-full h-carrouselHeight overflow-hidden z-0 after:absolute after:inset-0 after:bg-movieGradient before:absolute before:bg-movieGradient2 before:inset-0">
+                        <div className="relative w-full mobile:h-mobileCarrouselHeight h-carrouselHeight overflow-hidden z-0 after:absolute after:inset-0 after:bg-movieGradient before:absolute before:bg-movieGradient2 before:inset-0">
                             <img src={elmt.horizontal_image} alt={elmt.name} className="w-full h-full object-cover object-top"/>
                         </div>
                     </div>

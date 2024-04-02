@@ -18,7 +18,7 @@ export default function Movies({ data }) {
     }, []);
 
     return (
-        <div className='flex gap-4 flex-wrap'>
+        <div className='flex gap-4 flex-wrap mobile:justify-center'>
             {data.map(el => 
                 isLargeScreen ? ( 
                     <Card key={el.name} {...el} />

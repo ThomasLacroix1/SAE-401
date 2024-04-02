@@ -1,7 +1,7 @@
 import { Outlet, useLoaderData } from 'react-router-dom';
 import { fetchCategory } from '../lib/loaders';
 
-import CatNavBar from '../ui/CatNavbar';
+import CatNavBar from '../ui/CatNavBar';
 
 export async function categoryLoader(){
   let cat = await fetchCategory();
