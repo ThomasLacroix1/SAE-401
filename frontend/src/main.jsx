@@ -9,7 +9,7 @@ import SearchPage, {moviesLoader as SearchMoviesLoader} from './routes/search.js
 import CategoriesPage, {moviesbycatLoader} from './routes/categoriesPage.jsx';
 import MoviePage, {movieLoader} from './routes/movie.jsx'
 import ErrorPage from './ui/ErrorPage';
-import WatchlistPage, {userLoader} from './routes/watchlist.jsx';
+import ProfilePage from './routes/profile.jsx';
 
 import './index.css';
 
@@ -48,9 +48,9 @@ const router = createBrowserRouter([
         loader: SearchMoviesLoader,
       },
       {
-        path: '/watchlist',
-        element: <WatchlistPage />,
-        loader: userLoader,
+        path: '/profile',
+        element: <ProfilePage />,
+        // loader: userLoader,
       },     
     ]
   },
