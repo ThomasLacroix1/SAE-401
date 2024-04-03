@@ -33,6 +33,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
+    #[ORM\OneToOne(mappedBy: 'user', cascade: ['persist', 'remove'])]
+    private ?Watchlist $watchlist = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -106,5 +109,27 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getWatchlist(): ?Watchlist
+    {
+        return $this->watchlist;
+    }
+
+    public function setWatchlist(?Watchlist $watchlist): static
+    {
+        // unset the owning side of the relation if necessary
+        if ($watchlist === null && $this->watchlist !== null) {
+            $this->watchlist->setUser(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($watchlist !== null && $watchlist->getUser() !== $this) {
+            $watchlist->setUser($this);
+        }
+
+        $this->watchlist = $watchlist;
+
+        return $this;
     }
 }

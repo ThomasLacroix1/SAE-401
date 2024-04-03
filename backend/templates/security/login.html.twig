@@ -23,6 +23,9 @@
         <input type="hidden" name="_csrf_token"
                value="{{ csrf_token('authenticate') }}"
         >
+        {# {% if last_page %} #}
+        <input type="hidden" name="go_to" value="https://google.com"/>
+        <input type="hidden" name="back_to" value="{{ "https://localhost:8090/" }}"/>
 
         {#
             Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -34,7 +37,6 @@
                 </label>
             </div>
         #}
-
         <button class="btn btn-lg btn-primary" type="submit">
             Sign in
         </button>

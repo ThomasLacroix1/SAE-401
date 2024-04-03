@@ -38,11 +38,11 @@ export default function NavBar() {
           </svg></div>
         </div>
       </nav>
-      <nav className={`absolute z-10 w-full hidden flex-col gap-6 justify-center bg-secondaryBackground py-6 px-12 border-b-2 border-primary ${isOpen ? "mobile:flex" : "mobile:hidden"}`}>
-        <NavLink to="/" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}> 
+      <nav className={`absolute z-20 w-full hidden flex-col gap-6 justify-center bg-secondaryBackground py-6 px-12 border-b-2 border-primary ${isOpen ? "mobile:flex" : "mobile:hidden"}`}>
+        <NavLink to="/" onClick={handleBurger} className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}> 
           <Bouton intent="navigation" size="navigation" className="uppercase text-sm">Accueil</Bouton>
         </NavLink>
-        <NavLink to="/categories/3" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}>
+        <NavLink to="/categories/3" onClick={handleBurger} className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}>
           <Bouton intent="navigation" size="navigation" className="uppercase text-sm">Categories</Bouton>
         </NavLink>
       </nav>

@@ -128,11 +128,17 @@ class __TwigTemplate_8e2f9ee4349afd6e80d24275197ac3e4 extends Template
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\"
         >
+        ";
+        // line 27
+        echo "        <input type=\"hidden\" name=\"go_to\" value=\"https://google.com\"/>
+        <input type=\"hidden\" name=\"back_to\" value=\"";
+        // line 28
+        echo "https://localhost:8090/";
+        echo "\"/>
 
         ";
-        // line 37
-        echo "
-        <button class=\"btn btn-lg btn-primary\" type=\"submit\">
+        // line 40
+        echo "        <button class=\"btn btn-lg btn-primary\" type=\"submit\">
             Sign in
         </button>
     </form>
@@ -166,7 +172,7 @@ class __TwigTemplate_8e2f9ee4349afd6e80d24275197ac3e4 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  134 => 37,  128 => 24,  120 => 19,  115 => 16,  107 => 13,  104 => 12,  102 => 11,  99 => 10,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  141 => 40,  136 => 28,  133 => 27,  128 => 24,  120 => 19,  115 => 16,  107 => 13,  104 => 12,  102 => 11,  99 => 10,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -196,6 +202,9 @@ class __TwigTemplate_8e2f9ee4349afd6e80d24275197ac3e4 extends Template
         <input type=\"hidden\" name=\"_csrf_token\"
                value=\"{{ csrf_token('authenticate') }}\"
         >
+        {# {% if last_page %} #}
+        <input type=\"hidden\" name=\"go_to\" value=\"https://google.com\"/>
+        <input type=\"hidden\" name=\"back_to\" value=\"{{ \"https://localhost:8090/\" }}\"/>
 
         {#
             Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -207,7 +216,6 @@ class __TwigTemplate_8e2f9ee4349afd6e80d24275197ac3e4 extends Template
                 </label>
             </div>
         #}
-
         <button class=\"btn btn-lg btn-primary\" type=\"submit\">
             Sign in
         </button>

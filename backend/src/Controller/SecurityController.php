@@ -2,13 +2,14 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
+use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
-use Symfony\Component\Serializer\SerializerInterface;
+use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
 class SecurityController extends AbstractController
 {
@@ -33,12 +34,13 @@ class SecurityController extends AbstractController
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
 
-    #[Route(path: '/actual_user', name: 'app_actual_user')]
-    public function actual_user(SerializerInterface $serializer): JsonResponse
-    {
-        $user = $this->getUser();
-        $data = $serializer->normalize($user, null);
-        $response = new JsonResponse( $data );
-        return $response;
-    }
+    // #[Route(path: '/actual_user', name: 'app_actual_user')]
+    // public function actual_user(SerializerInterface $serializer): JsonResponse
+    // {
+    //     $user = $this->getUser();
+    //     dd($user);
+    //     $data = $serializer->normalize($user, null);
+    //     $response = new JsonResponse( $data );
+    //     return $response;
+    // }
 }

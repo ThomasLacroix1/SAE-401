@@ -2,22 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Root, {userLoader} from './routes/root.jsx';
+import Root from './routes/root.jsx';
 import Home, {moviesLoader as homeMoviesLoader} from './routes/home.jsx';
 import CategoriesNav, {categoryLoader} from './routes/categoriesNav.jsx';
 import SearchPage, {moviesLoader as SearchMoviesLoader} from './routes/search.jsx';
 import CategoriesPage, {moviesbycatLoader} from './routes/categoriesPage.jsx';
 import MoviePage, {movieLoader} from './routes/movie.jsx'
 import ErrorPage from './ui/ErrorPage';
+import WatchlistPage, {userLoader} from './routes/watchlist.jsx';
 
 import './index.css';
+
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
     errorElement: <ErrorPage/>,
-    loader: userLoader,
     children: [
       {
         path: '/',
@@ -48,8 +49,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/watchlist',
-        // element: <SearchPage />,
-        // loader: SearchMoviesLoader,
+        element: <WatchlistPage />,
+        loader: userLoader,
       },     
     ]
   },

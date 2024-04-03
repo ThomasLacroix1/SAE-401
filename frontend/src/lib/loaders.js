@@ -29,8 +29,13 @@ export async function fetchMoviesInFront() {
 }
 
 export async function fetchActualUser() {
-    let answer = await fetch('http://localhost:8080/actual_user');
-    console.log(answer)
-    let data = await answer.json();
-    return data; 
+    let answer = await fetch('http://localhost:8080/actual_user', {credentials: "include"});
+    if (answer.redirected == true){
+        return window.location.href = answer.url;
+    } else {
+        let data = await answer.json();
+        return data; 
+    }
 }
+
+// export async function get

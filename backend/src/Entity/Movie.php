@@ -48,9 +48,13 @@ class Movie
     #[ORM\Column]
     private ?bool $in_front = null;
 
+    #[ORM\ManyToMany(targetEntity: Watchlist::class, mappedBy: 'movie')]
+    private Collection $watchlists;
+
     public function __construct()
     {
         $this->category = new ArrayCollection();
+        $this->watchlists = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -241,6 +245,33 @@ class Movie
     public function setInFront(bool $in_front): static
     {
         $this->in_front = $in_front;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Watchlist>
+     */
+    public function getWatchlists(): Collection
+    {
+        return $this->watchlists;
+    }
+
+    public function addWatchlist(Watchlist $watchlist): static
+    {
+        if (!$this->watchlists->contains($watchlist)) {
+            $this->watchlists->add($watchlist);
+            $watchlist->addMovie($this);
+        }
+
+        return $this;
+    }
+
+    public function removeWatchlist(Watchlist $watchlist): static
+    {
+        if ($this->watchlists->removeElement($watchlist)) {
+            $watchlist->removeMovie($this);
+        }
 
         return $this;
     }
