@@ -4,7 +4,7 @@ import Bouton from "../Basics/Bouton";
 
 export default function Carrousel({ data }) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 550);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 800);
 
     const goToNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
@@ -24,7 +24,7 @@ export default function Carrousel({ data }) {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLargeScreen(window.innerWidth > 550);
+            setIsLargeScreen(window.innerWidth > 800);
         };
   
         window.addEventListener('resize', handleResize);
@@ -51,8 +51,8 @@ export default function Carrousel({ data }) {
                                 <span> • </span>
                                 <span className="uppercase font-medium">{elmt.time}</span>
                             </div>
-                            <div className="flex flex-col gap-3">
-                                <p className="text-font text-lg mobile:text-xs drop-shadow-movie">{elmt.description}</p>
+                            <div className="flex flex-col gap-3 text-lg mobile:text-xs">
+                                <p className="text-font drop-shadow-movie">{elmt.description}</p>
                             </div>
                             {isLargeScreen ? 
                             <Link to={`/movie/${elmt.id}`}><Bouton size="big" className="uppercase">

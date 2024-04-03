@@ -27,6 +27,7 @@ return [
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'app_actual_user' => [[], ['_controller' => 'App\\Controller\\SecurityController::actual_user'], [], [['text', '/actual_user']], [], [], []],
     'App\Controller\Admin\DashboardController::index' => [[], ['_controller' => 'App\\Controller\\Admin\\DashboardController::index'], [], [['text', '/admin']], [], [], []],
     'App\Controller\ApiController::index' => [[], ['_controller' => 'App\\Controller\\ApiController::index'], [], [['text', '/api']], [], [], []],
     'App\Controller\ApiController::readMovies' => [[], ['_controller' => 'App\\Controller\\ApiController::readMovies'], [], [['text', '/api/movies']], [], [], []],
@@ -37,4 +38,5 @@ return [
     'App\Controller\RegistrationController::register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'App\Controller\SecurityController::login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'App\Controller\SecurityController::logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'App\Controller\SecurityController::actual_user' => [[], ['_controller' => 'App\\Controller\\SecurityController::actual_user'], [], [['text', '/actual_user']], [], [], []],
 ];

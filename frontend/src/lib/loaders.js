@@ -28,3 +28,9 @@ export async function fetchMoviesInFront() {
     return data; 
 }
 
+export async function fetchActualUser() {
+    let answer = await fetch('http://localhost:8080/actual_user');
+    console.log(answer)
+    let data = await answer.json();
+    return data; 
+}

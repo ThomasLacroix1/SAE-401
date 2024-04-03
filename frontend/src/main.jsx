@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Root from './routes/root.jsx';
+import Root, {userLoader} from './routes/root.jsx';
 import Home, {moviesLoader as homeMoviesLoader} from './routes/home.jsx';
 import CategoriesNav, {categoryLoader} from './routes/categoriesNav.jsx';
 import SearchPage, {moviesLoader as SearchMoviesLoader} from './routes/search.jsx';
@@ -17,6 +17,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     errorElement: <ErrorPage/>,
+    loader: userLoader,
     children: [
       {
         path: '/',
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
         element: <SearchPage />,
         loader: SearchMoviesLoader,
       },
-      
+      {
+        path: '/watchlist',
+        // element: <SearchPage />,
+        // loader: SearchMoviesLoader,
+      },     
     ]
   },
 ]);

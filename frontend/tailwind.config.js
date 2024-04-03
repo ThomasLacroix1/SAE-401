@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        'mobile': { 'raw': '(max-width: 550px)' },
+        'mobile': { 'raw': '(max-width: 800px)' },
+        'tablet': { 'raw': '(min-width: 800px, max-width: 1100px)' },
       },
       colors: {
         background: "var(--dark-blue)",
@@ -26,13 +27,16 @@ export default {
         "movieHeight": "45rem",
         "searchBar": "90%",
         "movieLeft": "4%",
-        "movieText": "70%",
+        "movieText": "60%",
         "carrouselTop": "60%",
         "carrouselHeight": "40rem",
         "mobileCarrouselHeight": "30rem",
         "videoWidth": "50rem",
+        "tabletVideoWidth": "35rem",
+        "mobileVideoWidth": "20rem",
         "footerWidth": "85%",
         "catNav": ".48rem",
+        "tabletTop": "15%"
       },
       borderWidth: {
         1: "1px",
