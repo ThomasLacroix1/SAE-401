@@ -9,5 +9,12 @@
     --yellow: #DEEB52;
     --light-blue: #AAC0C8;
     --blue: #004159;
+
+    --foreground: var(--white);
+    --background: var(--dark-blue);
+    --secondary-background: var(--blue);
+    --primary: var(--yellow);
+    --navigation: var(--light-blue);
   }
+
 }

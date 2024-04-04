@@ -28,12 +28,12 @@ export async function fetchMoviesInFront() {
     return data; 
 }
 
-// export async function fetchActualUser() {
-//     let answer = await fetch('http://localhost:8080/actual_user', {credentials: "include"});
-//     if (answer.redirected == true){
-//         return window.location.href = answer.url;
-//     } else {
-//         let data = await answer.json();
-//         return data; 
-//     }
-// }
+export async function fetchActualUser() {
+    let answer = await fetch('http://localhost:8080/user/watchlist', {credentials: "include"});
+    if (answer.redirected == true){
+        return window.location.href = answer.url;
+    } else {
+        let data = await answer.json();
+        return data; 
+    }
+}

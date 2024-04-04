@@ -76,28 +76,14 @@ class ApiController extends AbstractController
         return $response;
     }
     
-    #[Route('/api/actual_user', name: 'app_api_actual_user')]
-    public function actualUser(WatchlistRepository $watchlistRepository, SerializerInterface $serializer): Response
-    {
-        $watchlist = $this->getUser()->getWatchlist()->getMovie();
-        $normalizedUser = $serializer->normalize($watchlist, null, [AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object) {
-            return $object->getId();
-        }]);        
-        $data = array_merge($normalizedUser);
-        return new JsonResponse($data);
-    }
-
-    // #[Route('/api/add_movie_to_watchlist/{id}', name: 'app_api_add_movie_to_watchlist')]
-    // public function addMovieToWatchlist(Category $cat, SerializerInterface $serializer, MovieRepository $movieRepository): Response
+    // #[Route('/api/actual_user', name: 'app_api_actual_user')]
+    // public function actualUser(WatchlistRepository $watchlistRepository, SerializerInterface $serializer): Response
     // {
-    //     $movies = $movieRepository->findByCategory($cat);
-        
-    //     $normalizedMovies = $serializer->normalize($movies, null, ['groups' => 'json_movie']);
-
-    //     $normalizedCategory = $serializer->normalize($cat, null, ['groups' => 'json_category']);
-
-    //     $data = array_merge($normalizedCategory, ['movies' => $normalizedMovies]);
-
+    //     $watchlist = $this->getUser()->getWatchlist()->getMovie();
+    //     $normalizedUser = $serializer->normalize($watchlist, null, [AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object) {
+    //         return $object->getId();
+    //     }]);        
+    //     $data = array_merge($normalizedUser);
     //     return new JsonResponse($data);
     // }
 }

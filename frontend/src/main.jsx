@@ -9,7 +9,7 @@ import SearchPage, {moviesLoader as SearchMoviesLoader} from './routes/search.js
 import CategoriesPage, {moviesbycatLoader} from './routes/categoriesPage.jsx';
 import MoviePage, {movieLoader} from './routes/movie.jsx'
 import ErrorPage from './ui/ErrorPage';
-import ProfilePage from './routes/profile.jsx';
+import ProfilePage, {userLoader} from './routes/profile.jsx';
 
 import './index.css';
 
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: '/profile',
         element: <ProfilePage />,
-        // loader: userLoader,
+        loader: userLoader,
       },     
     ]
   },
