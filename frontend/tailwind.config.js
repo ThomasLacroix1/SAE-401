@@ -5,7 +5,7 @@ export default {
     extend: {
       screens: {
         'mobile': { 'raw': '(max-width: 800px)' },
-        'tablet': { 'raw': '(min-width: 800px, max-width: 1100px)' },
+        'tablet': { 'raw': '(min-width: 800px) and (max-width: 1100px)' },
       },
       colors: {
         background: "var(--background)",
@@ -60,7 +60,8 @@ export default {
       },
       boxShadow: {
         "dot": "0 -1px 0.75rem #fff",
-        "cat": "4px 0px 10px 1px rgba(0,0,0,.5)",
+        "catRight": "4px 0px 10px 1px rgba(0,0,0,.5)",
+        "catLeft": "-4px 0px 10px 1px rgba(0,0,0,.5)",
         "CardBox": "0px 0px 15px 1px rgba(255,255,255,.5)",
       },
       fontSize: {

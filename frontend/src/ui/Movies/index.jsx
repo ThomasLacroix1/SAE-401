@@ -7,7 +7,7 @@ export default function Movies({ data }) {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLargeScreen(window.innerWidth > 550);
+            setIsLargeScreen(window.innerWidth > 800);
         };
   
         window.addEventListener('resize', handleResize);

@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Carrousel data={inFront}/>
-      <div className='mt-6 p-movieLeft flex flex-col gap-6'>
+      <div className='mt-6 p-movieLeft flex flex-col gap-14 mobile:items-center'>
         <h1 className='font-bold text-2xl text-font drop-shadow-movie'>Nos Films</h1>
         <Movies data={mov}/>
       </div>
