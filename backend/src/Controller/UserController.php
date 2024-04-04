@@ -17,13 +17,13 @@ use App\Entity\User;
 class UserController extends AbstractController
 {
     
-    #[Route('/user/profile', name: 'app_user_watchlist')]
+    #[Route('/user/profile', name: 'app_user_profile')]
     public function actualUser(WatchlistRepository $watchlistRepository, SerializerInterface $serializer): Response
     {
         $user = $this->getUser();
-        $watchlist = $this->$user->getWatchlist();
-        // dd($watchlist->getUser());
-        $normalizedUser = $serializer->normalize($this->$user, null, [AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object) {
+        $watchlist = $user->getWatchlist();
+        // dd($watchlist);
+        $normalizedUser = $serializer->normalize($watchlist, null, [AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object) {
             return $object->getId();
         }]);
         $data = array_merge($normalizedUser);
@@ -36,7 +36,7 @@ class UserController extends AbstractController
         $user = $this->getUser();
         $watchlist = $user->getWatchlist();
         $watchlist->addMovie($mov);
-        dd($watchlist->getMovie());
+        // dd($watchlist->getMovie());
         if ($watchlist->getMovie()->contains($mov)){
             return new JsonResponse(['Le film a été ajouté à votre liste avec succès.']);
         } else {

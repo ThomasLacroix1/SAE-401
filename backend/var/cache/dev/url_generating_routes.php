@@ -27,7 +27,7 @@ return [
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
-    'app_user_watchlist' => [[], ['_controller' => 'App\\Controller\\UserController::actualUser'], [], [['text', '/user/profile']], [], [], []],
+    'app_user_profile' => [[], ['_controller' => 'App\\Controller\\UserController::actualUser'], [], [['text', '/user/profile']], [], [], []],
     'app_user_add_movie' => [['id'], ['_controller' => 'App\\Controller\\UserController::addMovie'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/user/addMovie']], [], [], []],
     'App\Controller\Admin\DashboardController::index' => [[], ['_controller' => 'App\\Controller\\Admin\\DashboardController::index'], [], [['text', '/admin']], [], [], []],
     'App\Controller\ApiController::index' => [[], ['_controller' => 'App\\Controller\\ApiController::index'], [], [['text', '/api']], [], [], []],

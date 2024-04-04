@@ -21,8 +21,8 @@ const button = cva(base, {
       ],
     },
     size: {
-      small: ["text-xs", "py-2", "px-2", "rounded"],
-      medium: ["text-base", "py-3", "px-4", "rounded", "font-semibold"],
+      small: ["text-xs", "py-2", "px-2", "rounded", "flex", "justify-center", "items-center", "gap-1"],
+      medium: ["text-base", "py-3", "px-4", "rounded", "font-semibold", "flex", "justify-center", "items-center", "gap-2"],
       navigation: ["text-lg", "font-semibold"],
       catNavigation: ["text-lg", "py-3", "px-4", "font-semibold"],
       footer: ["text-xl", "font-semibold"],

@@ -40,7 +40,7 @@ export default function Carrousel({ data }) {
                 {data.map((elmt, index) => (
                     <div key={ index } className={`relative ${index === currentIndex ? '' : 'hidden'}`}>
                         <div className="absolute flex flex-col gap-6 mobile:gap-4 z-10 top-1/4 left-movieLeft w-movieText">
-                            <h1 className="text-font font-bold text-3xl drop-shadow-movie mobile:text-xl">{elmt.name}</h1>
+                            <h1 className="text-font font-bold text-3xl w-2/3 drop-shadow-movie mobile:text-xl">{elmt.name}</h1>
                             <div className="text-details text-sm mobile:text-xs">
                                 {elmt.category.map((el, index) => (
                                     <React.Fragment key={index}>

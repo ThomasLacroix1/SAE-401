@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from 'react-router-dom';
+import { Navigate, Outlet, useLoaderData } from 'react-router-dom';
 import { fetchCategory } from '../lib/loaders';
 
 import CatNavBar from '../ui/CatNavBar';
@@ -15,6 +15,7 @@ export default function CategoriesNav() {
   return (
       <>
         <CatNavBar data={cat}/>
+        <Navigate to="/categories/3"/>
         {<Outlet/>}
       </>
   );

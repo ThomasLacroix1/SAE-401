@@ -29,7 +29,7 @@ export default function Movie({ name, director, synopsis, horizontal_image, time
         <>
         <div className={isOpen? "bg-black opacity-30 pointer-events-none" : null}>
             <div className="absolute flex flex-col gap-6 mobile:gap-4 z-10 top-1/4 mobile:top-tabletTop tablet:top-tabletTop left-movieLeft w-movieText">
-                <h1 className="text-font font-bold text-3xl drop-shadow-movie mobile:text-xl tablet:text-2xl">{name}</h1>
+                <h1 className="text-font font-bold text-3xl drop-shadow-movie w-2/3 mobile:text-xl tablet:text-2xl">{name}</h1>
                 <div className="text-details text-sm mobile:text-xs">
                     {category.map((el, index) => (
                         <React.Fragment key={index}>
@@ -46,10 +46,14 @@ export default function Movie({ name, director, synopsis, horizontal_image, time
                 </div>
                 {isLargeScreen ? 
                     <Bouton size="big" className="uppercase" onClick={openPopup}>
+                        <svg fill="#000000" height="14px" id="play" viewBox="0 0 224.075 224.075" ><g><g><path d="M216.2,99.23L20.5,1.63c-2.1-1.1-4.8-1.6-6.9-1.6v0C5.7,0.53,0,6.33,0,14.23v195.7c0,10.5,11,17.3,20.5,12.6l195.7-98.1 C226.7,119.23,226.7,104.53,216.2,99.23z M27.8,187.33V36.73l150.6,75L27.8,187.33z"/></g></g>
+                        </svg>
                         Regarder
                     </Bouton>
                     : 
                     <Bouton size="small" className="uppercase" onClick={openPopup}>
+                        <svg fill="#000000" height="10px" id="play" viewBox="0 0 224.075 224.075" ><g><g><path d="M216.2,99.23L20.5,1.63c-2.1-1.1-4.8-1.6-6.9-1.6v0C5.7,0.53,0,6.33,0,14.23v195.7c0,10.5,11,17.3,20.5,12.6l195.7-98.1 C226.7,119.23,226.7,104.53,216.2,99.23z M27.8,187.33V36.73l150.6,75L27.8,187.33z"/></g></g>
+                        </svg>
                         Regarder
                     </Bouton>
                 }
