@@ -12,7 +12,7 @@ export default function NavBar() {
     return (
       <>
       <nav className="bg-background flex items-center justify-between px-12 py-4 border-b-2 border-b-primary">
-        <Link to="/"><img className="h-6 mobile:h-4" src="/assets/images/logo-itvX.webp" alt="Logo"/></Link>
+        <Link to="/"><img className="h-6 mobile:h-4 w-auto" src="/assets/images/logo-itvX.webp" alt="Logo"/></Link>
         <div className='flex flex-row gap-6 mobile:hidden'>
           <NavLink to="/" className={({ isActive }) => `hover:text-primary ${isActive ? "text-primary" : "text-navigation"}`}> 
             <Bouton intent="navigation" size="navigation" className="uppercase">Accueil</Bouton>

@@ -35,7 +35,7 @@ export default function Footer() {
                 </div>
             </div>
             <p className='text-navigation text-sm mobile:text-xs font-semibold'>© ITV Consumer Limited 2024</p>
-            <img className="w-24 mobile:w-20" src="/assets/images/logo-itvX.webp" alt="Logo"/>
+            <img className="w-24 mobile:w-20 h-auto" src="/assets/images/logo-itvX.webp" alt="Logo"/>
         </footer>
     );
 }
