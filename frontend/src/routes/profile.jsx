@@ -10,14 +10,10 @@ export async function userLoader() {
 export default function ProfilePage(){
 
     const user = useLoaderData();
-    if (user.watchlist == null){
-        user.watchlist == [];
-    }
-    console.log(user);
 
     return (
         <div className='mt-6 p-6'>
-            <Profile />
+            <Profile {...user}/>
         </div>
     )
 }

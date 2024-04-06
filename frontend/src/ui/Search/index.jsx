@@ -13,7 +13,7 @@ export default function Search({ data }) {
     return (
         <>  
             <div className="flex justify-center">
-                <input type="search" onChange={handleChange} placeholder="Recherchez les films que vous voulez" className="placeholder-navigation text-navigation bg-secondaryBackground text-lg pl-6 font-bold h-16 w-full rounded border-b-1 border-white "/>
+                <input type="search" onChange={handleChange} placeholder="Recherchez les films que vous voulez" className="placeholder-navigation text-navigation bg-secondaryBackground text-lg pl-6 font-bold h-16 w-full rounded border-b-1 border-white"/>
             </div>
             <div className="mt-16">
                 <SearchMovies data={searchResults}/>

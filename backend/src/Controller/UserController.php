@@ -13,34 +13,21 @@ use App\Repository\UserRepository;
 use Symfony\Component\Serializer\Normalizer\AbstractNormalizer;
 use App\Entity\Movie;
 use App\Entity\User;
+use Doctrine\ORM\EntityManagerInterface;
 
 class UserController extends AbstractController
 {
-    
-    #[Route('/user/profile', name: 'app_user_profile')]
-    public function actualUser(WatchlistRepository $watchlistRepository, SerializerInterface $serializer): Response
-    {
-        $user = $this->getUser();
-        $watchlist = $user->getWatchlist();
-        // dd($watchlist);
-        $normalizedUser = $serializer->normalize($watchlist, null, [AbstractNormalizer::CIRCULAR_REFERENCE_HANDLER => function ($object) {
-            return $object->getId();
-        }]);
-        $data = array_merge($normalizedUser);
-        return new JsonResponse($data);
-    }
 
-    #[Route('/user/addMovie/{id}', name: 'app_user_add_movie')]
-    public function addMovie(Movie $mov, SerializerInterface $serializer): Response
+    #[Route('/user/set_email', name: 'app_user_set_email')]
+    public function setEmail(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $user = $this->getUser();
-        $watchlist = $user->getWatchlist();
-        $watchlist->addMovie($mov);
-        // dd($watchlist->getMovie());
-        if ($watchlist->getMovie()->contains($mov)){
-            return new JsonResponse(['Le film a été ajouté à votre liste avec succès.']);
-        } else {
-            return new JsonResponse(['Erreur']);
-        }
+        $email = $request->query->get('email');
+    
+        $this->getUser()->setEmail($email);
+
+        $entityManager->persist($this->getUser());
+        $entityManager->flush();
+
+        return new Response("true");
     }
 }

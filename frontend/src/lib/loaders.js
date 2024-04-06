@@ -29,7 +29,8 @@ export async function fetchMoviesInFront() {
 }
 
 export async function fetchActualUser() {
-    let answer = await fetch('http://localhost:8080/user/watchlist', {credentials: "include"});
+    let answer = await fetch('http://localhost:8080/api/actual_user', {credentials: "include"});
+console.log(answer);
     if (answer.redirected == true){
         return window.location.href = answer.url;
     } else {
@@ -37,3 +38,13 @@ export async function fetchActualUser() {
         return data; 
     }
 }
+
+export async function fetchSetEmail(mail) {
+        let answer = await fetch('http://localhost:8080/user/set_email?email='+mail, {credentials: "include"});
+        if (answer.redirected == true){
+            return window.location.href = answer.url;
+        } else {
+            let data = await answer.json();
+            return data; 
+        }
+    }
